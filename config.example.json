@@ -1,0 +1,14 @@
+{
+  "recipient": "+1XXXXXXXXXX",
+  "prefix": "Claude · ",
+  "quiet_start": 23,
+  "quiet_end": 8,
+  "max_per_hour": 6,
+  "max_per_day": 25,
+  "max_per_run": 3,
+  "max_age_hours": 24,
+  "max_text_chars": 1500,
+  "empire_dir": "~/empire-trading",
+  "empire_api": "http://127.0.0.1:5050",
+  "handoff_path": "~/ObsidianVault/OpenClaw/cetera-income/handoff/current_positions.json"
+}
