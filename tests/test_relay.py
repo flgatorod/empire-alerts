@@ -101,7 +101,12 @@ check("scrub drops account/recipient keys and redacts 8+ digit runs",
 check("in_quiet_hours wraps midnight", s.in_quiet_hours(NIGHT.astimezone(s.ET), CFG)
       and not s.in_quiet_hours(NOON.astimezone(s.ET), CFG))
 
+(TMP / "config.json").write_text(json.dumps({"recipient": "+1XXXXXXXXXX"}))
+check("placeholder recipient is treated as missing", s.load_config()["recipient"] == "")
+(TMP / "config.json").write_text(json.dumps({"recipient": " +15555550100 "}))
+check("real recipient is kept (trimmed)", s.load_config()["recipient"] == "+15555550100")
+
 shutil.rmtree(TMP, ignore_errors=True)
-bad = [n for n, ok in RESULTS if not ok]
+bad =[n for n, ok in RESULTS if not ok]
 print(f"\nRELAY TESTS: {len(RESULTS) - len(bad)}/{len(RESULTS)} green")
 sys.exit(1 if bad else 0)

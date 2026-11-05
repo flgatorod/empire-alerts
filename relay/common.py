@@ -49,6 +49,10 @@ def load_config() -> dict:
     env = os.environ.get("RELAY_RECIPIENT")
     if env:
         cfg["recipient"] = env
+    # The example file's placeholder is NOT a recipient. Treat it as missing so
+    # nothing is ever "sent" to +1XXXXXXXXXX (osascript reports success for it).
+    rcpt = str(cfg.get("recipient") or "").strip()
+    cfg["recipient"] = "" if (not rcpt or "XXX" in rcpt.upper()) else rcpt
     return cfg
 
 

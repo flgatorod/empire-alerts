@@ -35,6 +35,8 @@ import sys, json, os
 sys.path.insert(0, os.path.join(sys.argv[1], "relay"))
 import send_outbox as s
 cfg = s.load_config()
+if not cfg["recipient"]:
+    sys.exit("TEST NOT SENT — config.json has no real recipient yet. Set it, run ./install.sh, then retry.")
 a = s.validate(open(sys.argv[2]).read(), cfg)
 ok = s.send_imessage(cfg["prefix"] + a["text"], cfg["recipient"])
 print("TEST SENT" if ok else "TEST FAILED — see logs/relay.log")
