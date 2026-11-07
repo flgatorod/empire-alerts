@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 948.8,
+    "age_min": 963.8,
     "file": "2026-11-06-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-06T23:48:55",
+      "as_of": "2026-11-07T00:03:59",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -531,10 +531,10 @@
       }
     },
     "health": {
-      "account_value": 242364.84,
+      "account_value": 242365.81,
       "capital_deployed": 0,
       "cash_available": 498.32000000000005,
-      "cash_reserve_pct": 0.2056073810046045,
+      "cash_reserve_pct": 0.20560655811972822,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3639,7 +3639,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-07T04:48:55.534863+00:00",
+        "as_of": "2026-11-07T05:03:59.434867+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3673,8 +3673,8 @@
       }
     }
   },
-  "generated_at": "2026-11-07T04:48:54.540557+00:00",
-  "generated_at_et": "2026-11-06 23:48 EST",
+  "generated_at": "2026-11-07T05:03:57.518616+00:00",
+  "generated_at_et": "2026-11-07 00:03 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3849,51 +3849,18 @@
       "running": false
     }
   ],
-  "log_flags_today": {
-    "benchmark_record.log": {
-      "count_today": 91,
-      "last": [
-        "2026-11-06 21:32:23,052 [empire.benchmark_record] INFO: DARK: LADDER EMPTY (0 of 4); engine collateral $600,000.00; ladder collateral $0.00; realized to date NOT AVAILABLE; risk-free 4.28% (DGS3MO 2026-11-05, lag 1 business day, DGS3MO_LIVE); costs none/1.0 \u2014 empty or errored payload",
-        "2026-11-06 21:32:23,054 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-06: OSError: dark",
-        "2026-11-06 21:32:23,054 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-06: OSError: dark"
-      ]
-    },
-    "calendar-refresh.log": {
-      "count_today": 72,
-      "last": [
-        "2026-11-06 07:01:32,221 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: XLY\"}}}",
-        "2026-11-06 07:01:32,783 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
-        "2026-11-06 07:01:33,531 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=27: ABBV, ABNB, AMZN, ANET, BMY, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, PEP, PM, PSX, PYPL, RBLX, SHOP, SQ, TMUS, VRT, VRTX \u2014 entries on these names will be stamped e"
-      ]
-    },
-    "dividend_capture.log": {
-      "count_today": 55,
-      "last": [
-        "2026-11-06 21:32:25,136 [empire.dividend_capture] ERROR: ZZHR: capture RAISED (RuntimeError('vendor exploded on ZZHR')) \u2014 recorded MISSING for this session",
-        "2026-11-06 21:32:25,136 [empire.dividend_capture] INFO: ZZHR   2026-07-07  MISSING \u2014 capture raised: RuntimeError('vendor exploded on ZZHR')",
-        "2026-11-06 21:32:25,136 [empire.dividend_capture] INFO: ZZHR   2026-07-07  yield MISSING \u2014 NOT RANKED (capture raised: RuntimeError('vendor exploded on ZZHR'))"
-      ]
-    },
-    "gex_record.log": {
-      "count_today": 34,
-      "last": [
-        "2026-11-06 21:12:37,010 [empire.gex_record] INFO: ZZD: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload",
-        "2026-11-06 21:32:21,066 [empire.gex_record] INFO: ZZC: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload",
-        "2026-11-06 21:32:21,066 [empire.gex_record] INFO: ZZD: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload"
-      ]
-    }
-  },
+  "log_flags_today": {},
   "positions_handoff": {
     "last_updated": "2026-11-06T21:00:05.947027+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 468.8,
+  "positions_handoff_age_min": 483.9,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-07T04:47:04.788266+00:00",
-    "last_pull_ok": "2026-11-07T04:47:04.788266+00:00",
+    "last_poll": "2026-11-07T05:03:06.844711+00:00",
+    "last_pull_ok": "2026-11-07T05:03:06.844711+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
