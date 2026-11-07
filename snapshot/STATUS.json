@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 843.4,
+    "age_min": 858.4,
     "file": "2026-11-06-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-06T22:03:32",
+      "as_of": "2026-11-06T22:18:35",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -3639,7 +3639,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-07T03:03:32.500268+00:00",
+        "as_of": "2026-11-07T03:18:35.495475+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3673,8 +3673,8 @@
       }
     }
   },
-  "generated_at": "2026-11-07T03:03:30.436811+00:00",
-  "generated_at_et": "2026-11-06 22:03 EST",
+  "generated_at": "2026-11-07T03:18:34.566122+00:00",
+  "generated_at_et": "2026-11-06 22:18 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3889,11 +3889,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 363.4,
+  "positions_handoff_age_min": 378.5,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-07T03:02:50.971704+00:00",
-    "last_pull_ok": "2026-11-07T03:02:50.971704+00:00",
+    "last_poll": "2026-11-07T03:16:53.007522+00:00",
+    "last_pull_ok": "2026-11-07T03:16:53.007522+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
