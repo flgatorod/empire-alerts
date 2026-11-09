@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 91.6,
+    "age_min": 106.7,
     "file": "2026-11-09-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-09T09:31:44",
+      "as_of": "2026-11-09T09:46:50",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -531,10 +531,10 @@
       }
     },
     "health": {
-      "account_value": 242128.63,
+      "account_value": 244323.69,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.20580796248671623,
+      "cash_reserve_pct": 0.20395893660577902,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -560,10 +560,10 @@
       "open_csps": 0,
       "pct_deployed": 0.0,
       "sector_exposure": {},
-      "term_structure": "backwardation",
+      "term_structure": "contango",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 23.3,
+      "vix": 22.0,
       "vix_regime": "elevated",
       "weekly_pnl_pct": 0.0
     },
@@ -3639,7 +3639,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-09T14:31:45.006734+00:00",
+        "as_of": "2026-11-09T14:46:50.218883+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3650,7 +3650,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-09T14:30:02.117012+00:00",
+        "db_mtime": "2026-11-09T14:46:40.859743+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 47242,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3662,7 +3662,7 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-09-17T16:00:11",
-          "last_ok": "2026-11-06T16:01:15",
+          "last_ok": "2026-11-09T09:46:40",
           "streak": 0
         },
         "csp_scan": {
@@ -3673,8 +3673,8 @@
       }
     }
   },
-  "generated_at": "2026-11-09T14:31:43.791157+00:00",
-  "generated_at_et": "2026-11-09 09:31 EST",
+  "generated_at": "2026-11-09T14:46:47.382775+00:00",
+  "generated_at_et": "2026-11-09 09:46 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3706,7 +3706,7 @@
     {
       "label": "com.empire.csp-execution",
       "last_exit": 0,
-      "running": false
+      "running": true
     },
     {
       "label": "com.empire.daily-briefing",
@@ -3806,7 +3806,7 @@
     {
       "label": "com.empire.spread-execution",
       "last_exit": 0,
-      "running": false
+      "running": true
     },
     {
       "label": "com.empire.token-check",
@@ -3857,6 +3857,12 @@
         "2026-11-09 07:01:35,035 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
         "2026-11-09 07:01:35,839 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=28: ABBV, ABNB, AMZN, ANET, BMY, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, OKLO, PEP, PM, PSX, PYPL, RBLX, SHOP, SQ, TMUS, VRT, VRTX \u2014 entries on these names will be sta"
       ]
+    },
+    "dashboard.log": {
+      "count_today": 1,
+      "last": [
+        "2026-11-09 09:45:10,785 [wheel.signal_engine] WARNING: IV/HV spread calc failed for XOM: Expecting value: line 3 column 9 (char 22)"
+      ]
     }
   },
   "positions_handoff": {
@@ -3865,11 +3871,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 1.7,
+  "positions_handoff_age_min": 16.8,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-09T14:30:15.617400+00:00",
-    "last_pull_ok": "2026-11-09T14:30:15.617400+00:00",
+    "last_poll": "2026-11-09T14:46:18.189220+00:00",
+    "last_pull_ok": "2026-11-09T14:46:18.189220+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
