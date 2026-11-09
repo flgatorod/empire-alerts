@@ -1,18 +1,18 @@
-# Empire Daily Briefing — 2026-11-06
-_Generated 2026-11-06 08:00:06 _
+# Empire Daily Briefing — 2026-11-09
+_Generated 2026-11-09 08:00:02 _
 
 ## 1. Market State
 
-- **VIX** 27.48 (-2.48% vs prev close)
-- **S&P 500** ~7,341 (SPY $734.12, +0.15%)
-- **Oil (USO)** $147.91 (-0.20%)
-- **BTC (IBIT)** $42.96 (-0.16%)
-- **Regime**: LOW-ELEVATED
-  > LOW-ELEVATED (owner ruling 2026-10-30, EFFECTIVE 2026-10-19, recorded 2026-11-02): the ruled `to_low_elevated` trigger (VIX 5-day avg > 17) has been breached continuously since 2026-10-19 — 5-day avg 18.44, 14-day 18.20, 11 sessions in 16.68-21.15, 14 of 62 recorded closes above 17. Posture knobs UNCHANGED: 65/85 edge floors, 7-day earnings blackout, semi block, csp_vix_minimum 14, 50% target / 2.0x stop / 0.70 roll / 1-DTE time stop all hold — per owner ruling 2026-10-24 LOW and LOW-ELEVATED are one rule set differing only by a review band, so the label moves and nothing else does. The C2 CSP floor is NOT binding in this band (VIX 21.15, 7.15 points clear) — expect few or no premium-adequacy skips; cohort quality, not volatility, is still the constraint. SEPARATELY AND NOT RULED: today's 21.15 close breaches `immediate_review` (any close > 20) for the FIRST time in the recorded history (previous max 19.99 on 2026-10-16) — that is a different trigger from the one ruled here and the review is Peter's call.
-- **Sector leaders**: Tech +2.35%, Indust +0.57%, Energy -0.06%
-- **Sector laggards**: Staples -1.88%, Health -1.22%, Comms -0.91%
+- **VIX** 22.90 (-10.69% vs prev close)
+- **S&P 500** ~7,422 (SPY $742.19, +0.94%)
+- **Oil (USO)** $143.17 (-3.53%)
+- **BTC (IBIT)** $42.35 (-1.24%)
+- **Regime**: MODERATE
+  > MODERATE (owner ruling 2026-11-06, EFFECTIVE 2026-11-05, recorded 2026-11-06): the ruled `to_moderate` trigger breached on the 2026-11-05 close, VIX 28.18 > 27 — the only close above 27 in 65 recorded sessions, reached from a 16.61 close the session before. 5-day avg 21.24, 14-day 19.08, 16 of 65 closes above 17, 3 above 20. Posture knobs UNCHANGED and NO-RETRO: 65/85 edge floors, 7-day earnings blackout, semi block, csp_vix_minimum 14, 50% target / 2.0x stop / 0.70 roll / 1-DTE time stop all hold. The C2 CSP floor is NOT binding in this band (VIX 28.18, 14.18 points clear) — cohort quality, not volatility, is still the constraint. NOTHING HAS OPENED SINCE 2026-10-29: the kill switch has been tripped since 2026-11-03 and the reset is Peter's typed action. READ THE BREACH WITH ITS CAVEATS: it is single-armed, and 'sustained' with no day count is a single-close check — under a 2-day reading it is not breached. SEPARATELY: the six trigger questions are DEFERRED to a trigger-table v2 spec after the deploy reference (owner ruling 2026-11-06 evening, item C). The label is NARRATIVE ONLY — csp_enabled and csp_vix_minimum are the only regime knobs that gate, both unchanged — so an odd direction word is a wrong sentence, not a wrong trade. The watcher's private band table is GONE: its ladder now derives from this file's own regime_change_triggers (#85, closed).
+- **Sector leaders**: Discr +1.66%, Materials +1.35%, Health +1.32%
+- **Sector laggards**: Energy -0.48%, Staples +0.20%, Tech +0.61%
 - **Triggers armed**:
-  - ⚠ VIX 27.5 ≥ 20 (would arm LOW-ELEVATED)
+  - ⚠ VIX 22.9 ≥ 20 (would arm LOW-ELEVATED)
 
 ## 2. Open Positions
 
@@ -22,14 +22,12 @@ _No open positions._
 
 ## 3. Events This Week
 
-- **Fri 11/06** — OPEX: Weekly Options Expiration
 - **Fri 11/13** — OPEX: Weekly Options Expiration
 - **Fri 11/20** — OPEX: Monthly Options Expiration (Nov 2026)
-- Fri 11/06 — OKLO earnings — OKLO Earnings Report
-- Sat 11/07 — BRK-B earnings — BRK-B Earnings Report
-- Sat 11/07 — BRK.B earnings — BRK.B Earnings Report
 - Mon 11/09 — OXY earnings — OXY Earnings Report
 - Mon 11/09 — SQ earnings — SQ Earnings Report
+- Mon 11/09 — BRK-B earnings — BRK-B Earnings Report
+- Mon 11/09 — BRK.B earnings — BRK.B Earnings Report
 - Tue 11/10 — OKLO earnings — OKLO Earnings Report
 - Tue 11/10 — RGTI earnings — RGTI Earnings Report
 - Tue 11/10 — QBTS earnings — QBTS Earnings Report
@@ -43,7 +41,7 @@ _No open positions._
 ## 4. Paper Trading Activity
 
 - **Open**: 0 single-leg + 1 spreads
-- **Yesterday**: +0 opens, 1 closes ($-32.00 realized)
+- **Yesterday**: +0 opens, 0 closes ($0.00 realized)
 - **Total closed**: 275 (72% win rate, $3,179.00 total PnL)
 - **Real-eligible vs paper-only**: 142 real / 133 paper
   - real_eligible: 142 opened, 142 closed, win_rate=67%, avg=$-14
@@ -55,8 +53,8 @@ _No open positions._
 
 ## 6. System Health
 
-- ✓ Token: 3d old, 4d remaining (source: refresh_token_issued) — healthy
-- ✓ Dashboard: 244ms
+- ⚠ Token: 6d old, 1d remaining (source: refresh_token_issued) — warn
+- ✓ Dashboard: 332ms
 - ✓ Launchd jobs loaded: 29 com.empire.*
-- Positions sync: 1-05 16:00:02,237 [empire.positions_sync] INFO: === SYNC COMPLETE: 0 closed, 0 inserted, drift 0 ===
+- Positions sync: 1-06 16:00:05,949 [empire.positions_sync] INFO: === SYNC COMPLETE: 0 closed, 0 inserted, drift 0 ===
 - ✓ No recent errors in *.err logs
