@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 4246.0,
+    "age_min": 4261.0,
     "file": "2026-11-06-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-09T06:46:08",
+      "as_of": "2026-11-09T07:01:11",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -531,10 +531,10 @@
       }
     },
     "health": {
-      "account_value": 240600.33,
+      "account_value": 240729.1,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.20711526039885317,
+      "cash_reserve_pct": 0.20700447100080546,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -563,7 +563,7 @@
       "term_structure": "contango",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 23.4,
+      "vix": 23.5,
       "vix_regime": "elevated",
       "weekly_pnl_pct": 0.0
     },
@@ -3639,7 +3639,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-09T11:46:08.907662+00:00",
+        "as_of": "2026-11-09T12:01:11.902806+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3650,7 +3650,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-06T21:41:10.480134+00:00",
+        "db_mtime": "2026-11-09T12:01:11.183670+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 47242,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3673,8 +3673,8 @@
       }
     }
   },
-  "generated_at": "2026-11-09T11:46:07.510917+00:00",
-  "generated_at_et": "2026-11-09 06:46 EST",
+  "generated_at": "2026-11-09T12:01:10.923242+00:00",
+  "generated_at_et": "2026-11-09 07:01 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3696,7 +3696,7 @@
     {
       "label": "com.empire.calendar-refresh",
       "last_exit": 0,
-      "running": false
+      "running": true
     },
     {
       "label": "com.empire.chain-round",
@@ -3849,18 +3849,27 @@
       "running": false
     }
   ],
-  "log_flags_today": {},
+  "log_flags_today": {
+    "calendar-refresh.log": {
+      "count_today": 45,
+      "last": [
+        "2026-11-09 07:01:10,126 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: SMH\"}}}",
+        "2026-11-09 07:01:10,730 [yfinance] ERROR: SMH: No earnings dates found, symbol may be delisted",
+        "2026-11-09 07:01:11,730 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: SOXX\"}}}"
+      ]
+    }
+  },
   "positions_handoff": {
     "last_updated": "2026-11-06T21:00:05.947027+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 3766.0,
+  "positions_handoff_age_min": 3781.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-09T11:45:49.456721+00:00",
-    "last_pull_ok": "2026-11-09T11:45:49.456721+00:00",
+    "last_poll": "2026-11-09T11:59:51.737677+00:00",
+    "last_pull_ok": "2026-11-09T11:59:51.737677+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
