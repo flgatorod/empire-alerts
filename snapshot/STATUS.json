@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 263.1,
+    "age_min": 278.2,
     "file": "2026-11-10-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-10T12:23:13",
+      "as_of": "2026-11-10T12:38:16",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -531,10 +531,10 @@
       }
     },
     "health": {
-      "account_value": 241029.84,
+      "account_value": 240056.42,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.20674618545156068,
+      "cash_reserve_pct": 0.20758453366920993,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -563,7 +563,7 @@
       "term_structure": "contango",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 20.5,
+      "vix": 21.1,
       "vix_regime": "elevated",
       "weekly_pnl_pct": 0.0
     },
@@ -3643,7 +3643,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-10T17:23:13.314620+00:00",
+        "as_of": "2026-11-10T17:38:16.836711+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3654,7 +3654,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-10T17:00:04.318291+00:00",
+        "db_mtime": "2026-11-10T17:33:22.739913+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 7435,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3666,19 +3666,19 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-09-17T16:00:11",
-          "last_ok": "2026-11-10T11:01:08",
+          "last_ok": "2026-11-10T12:31:15",
           "streak": 0
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-10T11:03:09",
+          "last_ok": "2026-11-10T12:33:22",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-10T17:23:11.612870+00:00",
-  "generated_at_et": "2026-11-10 12:23 EST",
+  "generated_at": "2026-11-10T17:38:15.875140+00:00",
+  "generated_at_et": "2026-11-10 12:38 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3871,9 +3871,10 @@
       ]
     },
     "dashboard.log": {
-      "count_today": 1,
+      "count_today": 2,
       "last": [
-        "2026-11-10 11:00:15,045 [empire.dashboard] ERROR: CC scan UEC: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-10 11:00:15,045 [empire.dashboard] ERROR: CC scan UEC: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-10 12:31:05,732 [empire.flow] WARNING: options_flow(CCJ) chain fetch failed: Expecting value: line 3 column 9 (char 22)"
       ]
     },
     "dividend_capture.log": {
@@ -3894,16 +3895,16 @@
     }
   },
   "positions_handoff": {
-    "last_updated": "2026-11-10T17:00:04.323449+00:00",
+    "last_updated": "2026-11-10T17:30:02.175959+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 23.1,
+  "positions_handoff_age_min": 8.2,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-10T17:22:52.698932+00:00",
-    "last_pull_ok": "2026-11-10T17:22:52.698932+00:00",
+    "last_poll": "2026-11-10T17:36:54.889408+00:00",
+    "last_pull_ok": "2026-11-10T17:36:54.889408+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
