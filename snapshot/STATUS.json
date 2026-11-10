@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 950.1,
+    "age_min": 965.2,
     "file": "2026-11-09-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-09T23:50:15",
+      "as_of": "2026-11-10T00:05:18",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -531,10 +531,10 @@
       }
     },
     "health": {
-      "account_value": 248154.08,
+      "account_value": 247964.06,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.20081072211264872,
+      "cash_reserve_pct": 0.20096460753223672,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3639,7 +3639,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-10T04:50:15.197678+00:00",
+        "as_of": "2026-11-10T05:05:18.204613+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3673,8 +3673,8 @@
       }
     }
   },
-  "generated_at": "2026-11-10T04:50:13.837606+00:00",
-  "generated_at_et": "2026-11-09 23:50 EST",
+  "generated_at": "2026-11-10T05:05:17.163213+00:00",
+  "generated_at_et": "2026-11-10 00:05 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3850,36 +3850,28 @@
     }
   ],
   "log_flags_today": {
-    "calendar-refresh.log": {
-      "count_today": 73,
+    "benchmark_record.log": {
+      "count_today": 14,
       "last": [
-        "2026-11-09 07:01:34,484 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: XLY\"}}}",
-        "2026-11-09 07:01:35,035 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
-        "2026-11-09 07:01:35,839 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=28: ABBV, ABNB, AMZN, ANET, BMY, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, OKLO, PEP, PM, PSX, PYPL, RBLX, SHOP, SQ, TMUS, VRT, VRTX \u2014 entries on these names will be sta"
+        "2026-11-10 00:04:39,438 [empire.benchmark_record] INFO: DARK: LADDER EMPTY (0 of 4); engine collateral $600,000.00; ladder collateral $0.00; realized to date NOT AVAILABLE; risk-free 4.28% (DGS3MO 2026-11-09, lag 1 business day, DGS3MO_LIVE); costs none/1.0 \u2014 empty or errored payload",
+        "2026-11-10 00:04:39,441 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-10: OSError: dark",
+        "2026-11-10 00:04:39,441 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-10: OSError: dark"
       ]
     },
-    "dashboard.log": {
-      "count_today": 16,
+    "dividend_capture.log": {
+      "count_today": 10,
       "last": [
-        "2026-11-09 22:04:51,027 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: Schwab returned dict, expected a list of accounts (['errors'])",
-        "2026-11-09 22:04:51,032 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
-        "2026-11-09 22:04:51,163 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-10 00:04:41,528 [empire.dividend_capture] ERROR: ZZHR: capture RAISED (RuntimeError('vendor exploded on ZZHR')) \u2014 recorded MISSING for this session",
+        "2026-11-10 00:04:41,528 [empire.dividend_capture] INFO: ZZHR   2026-07-07  MISSING \u2014 capture raised: RuntimeError('vendor exploded on ZZHR')",
+        "2026-11-10 00:04:41,528 [empire.dividend_capture] INFO: ZZHR   2026-07-07  yield MISSING \u2014 NOT RANKED (capture raised: RuntimeError('vendor exploded on ZZHR'))"
       ]
     },
-    "regime-sync.log": {
-      "count_today": 12,
+    "gex_record.log": {
+      "count_today": 4,
       "last": [
-        "2026-11-09 21:48:37,801 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
-        "2026-11-09 21:49:42,860 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
-        "2026-11-09 21:49:43,040 [empire.regime_monitor] WARNING: SPY fallback fetch failed: Expecting value: line 3 column 9 (char 22)"
-      ]
-    },
-    "regime.log": {
-      "count_today": 12,
-      "last": [
-        "2026-11-09 21:48:37,801 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
-        "2026-11-09 21:49:42,860 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
-        "2026-11-09 21:49:43,040 [empire.regime_monitor] WARNING: SPY fallback fetch failed: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-10 00:01:26,607 [empire.gex_record] INFO: ZZD: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload",
+        "2026-11-10 00:04:37,434 [empire.gex_record] INFO: ZZC: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload",
+        "2026-11-10 00:04:37,434 [empire.gex_record] INFO: ZZD: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload"
       ]
     }
   },
@@ -3889,11 +3881,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 470.2,
+  "positions_handoff_age_min": 485.2,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-10T04:48:28.437712+00:00",
-    "last_pull_ok": "2026-11-10T04:48:28.437712+00:00",
+    "last_poll": "2026-11-10T05:04:30.708702+00:00",
+    "last_pull_ok": "2026-11-10T05:04:30.708702+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
