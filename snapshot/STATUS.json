@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 814.7,
+    "age_min": 829.7,
     "file": "2026-11-09-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-09T21:34:46",
+      "as_of": "2026-11-09T21:49:48",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -3631,7 +3631,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-10T02:34:46.241511+00:00",
+        "as_of": "2026-11-10T02:49:48.861978+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3665,8 +3665,8 @@
       }
     }
   },
-  "generated_at": "2026-11-10T02:34:45.710651+00:00",
-  "generated_at_et": "2026-11-09 21:34 EST",
+  "generated_at": "2026-11-10T02:49:48.400140+00:00",
+  "generated_at_et": "2026-11-09 21:49 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3851,11 +3851,27 @@
       ]
     },
     "dashboard.log": {
-      "count_today": 7,
+      "count_today": 12,
       "last": [
-        "2026-11-09 21:34:45,961 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: Schwab returned dict, expected a list of accounts (['errors'])",
-        "2026-11-09 21:34:45,966 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
-        "2026-11-09 21:34:46,099 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-09 21:49:48,610 [wheel.scanner] ERROR: [digest] EMPIRE LIVE ACCOUNT NOT AVAILABLE \u2014 3 consecutive Schwab balance fetches failed (Schwab returned dict, expected a list of accounts (['errors'])). Health, account value and the real-money reserve are UNKNOWN, not healthy. Paper trading is unaffe",
+        "2026-11-09 21:49:48,611 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
+        "2026-11-09 21:49:48,727 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
+      ]
+    },
+    "regime-sync.log": {
+      "count_today": 12,
+      "last": [
+        "2026-11-09 21:48:37,801 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
+        "2026-11-09 21:49:42,860 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
+        "2026-11-09 21:49:43,040 [empire.regime_monitor] WARNING: SPY fallback fetch failed: Expecting value: line 3 column 9 (char 22)"
+      ]
+    },
+    "regime.log": {
+      "count_today": 12,
+      "last": [
+        "2026-11-09 21:48:37,801 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
+        "2026-11-09 21:49:42,860 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (database is locked).",
+        "2026-11-09 21:49:43,040 [empire.regime_monitor] WARNING: SPY fallback fetch failed: Expecting value: line 3 column 9 (char 22)"
       ]
     }
   },
@@ -3865,11 +3881,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 334.7,
+  "positions_handoff_age_min": 349.7,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-10T02:34:07.695526+00:00",
-    "last_pull_ok": "2026-11-10T02:34:07.695526+00:00",
+    "last_poll": "2026-11-10T02:48:09.883207+00:00",
+    "last_pull_ok": "2026-11-10T02:48:09.883207+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
