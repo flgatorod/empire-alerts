@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 986.4,
+    "age_min": 1001.5,
     "file": "2026-11-10-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-11T00:26:31",
+      "as_of": "2026-11-11T00:41:33",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -531,11 +531,11 @@
       }
     },
     "health": {
-      "account_value": 248437.35,
-      "capital_deployed": 0,
-      "cash_available": 498.32,
-      "cash_reserve_pct": 0.20058175632609188,
-      "daily_pnl_pct": 0.0,
+      "account_value": null,
+      "cash_available": null,
+      "cash_reserve_pct": null,
+      "degraded": true,
+      "error": "live account unreadable \u2014 see logs/dashboard.log",
       "halt": {
         "days_halted": null,
         "gate_note": null,
@@ -544,7 +544,8 @@
         "source": null,
         "tripped_at": null
       },
-      "health_status": "YELLOW \u2014 Monitor closely",
+      "health_status": "DEGRADED \u2014 LIVE ACCOUNT NOT AVAILABLE",
+      "live_account": "NOT AVAILABLE",
       "live_lane": {
         "account": "schwab_wheel",
         "basis": "none",
@@ -556,16 +557,7 @@
         "state": "NOT_CONFIGURED",
         "state_source": "live_schwab_wheel"
       },
-      "open_ccs": 0,
-      "open_csps": 0,
-      "pct_deployed": 0.0,
-      "sector_exposure": {},
-      "term_structure": "contango",
-      "total_positions": 0,
-      "unique_underlyings": 0,
-      "vix": 19.5,
-      "vix_regime": "normal",
-      "weekly_pnl_pct": 0.0
+      "vix": 19.5
     },
     "kpi": {
       "bases": [
@@ -3647,7 +3639,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-11T05:26:31.607968+00:00",
+        "as_of": "2026-11-11T05:41:33.866569+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3681,8 +3673,8 @@
       }
     }
   },
-  "generated_at": "2026-11-11T05:26:30.041252+00:00",
-  "generated_at_et": "2026-11-11 00:26 EST",
+  "generated_at": "2026-11-11T05:41:33.431648+00:00",
+  "generated_at_et": "2026-11-11 00:41 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3857,18 +3849,25 @@
       "running": false
     }
   ],
-  "log_flags_today": {},
+  "log_flags_today": {
+    "dashboard.log": {
+      "count_today": 1,
+      "last": [
+        "2026-11-11 00:41:33,470 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+      ]
+    }
+  },
   "positions_handoff": {
     "last_updated": "2026-11-10T21:00:02.356900+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 506.5,
+  "positions_handoff_age_min": 521.5,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-11T05:25:07.398571+00:00",
-    "last_pull_ok": "2026-11-11T05:25:07.398571+00:00",
+    "last_poll": "2026-11-11T05:41:10.043051+00:00",
+    "last_pull_ok": "2026-11-11T05:41:10.043051+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
