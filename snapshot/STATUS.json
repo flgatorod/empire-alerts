@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 259.5,
+    "age_min": 274.6,
     "file": "2026-11-12-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-12T12:19:38",
+      "as_of": "2026-11-12T12:34:41",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -532,10 +532,10 @@
       }
     },
     "health": {
-      "account_value": 249182.15,
+      "account_value": 249384.63,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.19998222184052908,
+      "cash_reserve_pct": 0.19981985257070572,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -564,7 +564,7 @@
       "term_structure": "contango",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 17.7,
+      "vix": 17.6,
       "vix_regime": "normal",
       "weekly_pnl_pct": 0.0
     },
@@ -3656,7 +3656,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-12T17:19:38.820630+00:00",
+        "as_of": "2026-11-12T17:34:41.917415+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3667,7 +3667,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-12T17:00:07.129620+00:00",
+        "db_mtime": "2026-11-12T17:33:46.177294+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 71240,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3679,19 +3679,19 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-09-17T16:00:11",
-          "last_ok": "2026-11-12T11:01:36",
+          "last_ok": "2026-11-12T12:31:25",
           "streak": 0
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-12T11:04:12",
+          "last_ok": "2026-11-12T12:33:45",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-12T17:19:37.719130+00:00",
-  "generated_at_et": "2026-11-12 12:19 EST",
+  "generated_at": "2026-11-12T17:34:40.792042+00:00",
+  "generated_at_et": "2026-11-12 12:34 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3907,16 +3907,16 @@
     }
   },
   "positions_handoff": {
-    "last_updated": "2026-11-12T17:00:07.133248+00:00",
+    "last_updated": "2026-11-12T17:30:01.748993+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 19.5,
+  "positions_handoff_age_min": 4.7,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-12T17:18:07.134708+00:00",
-    "last_pull_ok": "2026-11-12T17:18:07.134708+00:00",
+    "last_poll": "2026-11-12T17:34:09.570028+00:00",
+    "last_pull_ok": "2026-11-12T17:34:09.570028+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
