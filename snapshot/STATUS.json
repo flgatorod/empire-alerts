@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 1368.2,
+    "age_min": 1383.3,
     "file": "2026-11-11-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-12T06:48:21",
+      "as_of": "2026-11-12T07:03:25",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -532,10 +532,10 @@
       }
     },
     "health": {
-      "account_value": 247856.52,
+      "account_value": 247543.03,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.20105180206677636,
+      "cash_reserve_pct": 0.20130641529272708,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3654,7 +3654,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-12T11:48:22.037574+00:00",
+        "as_of": "2026-11-12T12:03:25.921766+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3665,7 +3665,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-11T21:41:13.536066+00:00",
+        "db_mtime": "2026-11-12T12:01:37.278271+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 71240,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3688,8 +3688,8 @@
       }
     }
   },
-  "generated_at": "2026-11-12T11:48:20.872131+00:00",
-  "generated_at_et": "2026-11-12 06:48 EST",
+  "generated_at": "2026-11-12T12:03:24.447633+00:00",
+  "generated_at_et": "2026-11-12 07:03 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3873,6 +3873,14 @@
         "2026-11-12 01:06:09,148 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-12: OSError: dark"
       ]
     },
+    "calendar-refresh.log": {
+      "count_today": 79,
+      "last": [
+        "2026-11-12 07:01:36,084 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: XLY\"}}}",
+        "2026-11-12 07:01:36,741 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
+        "2026-11-12 07:01:37,666 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=34: ABBV, ABNB, AMZN, ANET, BMY, BRK-B, BRK.B, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, NXE, OKLO, OXY, PEP, PM, PSX, PYPL, QBTS, RBLX, RGTI, SHOP, SQ, TMUS, VRT, VRTX "
+      ]
+    },
     "dividend_capture.log": {
       "count_today": 20,
       "last": [
@@ -3896,11 +3904,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 888.3,
+  "positions_handoff_age_min": 903.4,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-12T11:47:18.988212+00:00",
-    "last_pull_ok": "2026-11-12T11:47:18.988212+00:00",
+    "last_poll": "2026-11-12T12:03:21.203722+00:00",
+    "last_pull_ok": "2026-11-12T12:03:21.203722+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
