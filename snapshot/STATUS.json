@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 304.7,
+    "age_min": 319.7,
     "file": "2026-11-12-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-12T13:04:48",
+      "as_of": "2026-11-12T13:19:52",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -532,10 +532,10 @@
       }
     },
     "health": {
-      "account_value": 250174.1,
+      "account_value": 249840.95,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.19918928458221696,
+      "cash_reserve_pct": 0.1994548932030558,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3656,7 +3656,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-12T18:04:48.947815+00:00",
+        "as_of": "2026-11-12T18:19:52.184426+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3690,8 +3690,8 @@
       }
     }
   },
-  "generated_at": "2026-11-12T18:04:47.511022+00:00",
-  "generated_at_et": "2026-11-12 13:04 EST",
+  "generated_at": "2026-11-12T18:19:50.990508+00:00",
+  "generated_at_et": "2026-11-12 13:19 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3883,12 +3883,6 @@
         "2026-11-12 07:01:37,666 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=34: ABBV, ABNB, AMZN, ANET, BMY, BRK-B, BRK.B, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, NXE, OKLO, OXY, PEP, PM, PSX, PYPL, QBTS, RBLX, RGTI, SHOP, SQ, TMUS, VRT, VRTX "
       ]
     },
-    "dashboard.log": {
-      "count_today": 1,
-      "last": [
-        "2026-11-12 09:46:03,538 [wheel.signal_engine] WARNING: IV/HV spread calc failed for MPC: Expecting value: line 3 column 9 (char 22)"
-      ]
-    },
     "dividend_capture.log": {
       "count_today": 40,
       "last": [
@@ -3912,11 +3906,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 4.8,
+  "positions_handoff_age_min": 19.8,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-12T18:04:14.087789+00:00",
-    "last_pull_ok": "2026-11-12T18:04:14.087789+00:00",
+    "last_poll": "2026-11-12T18:18:16.275956+00:00",
+    "last_pull_ok": "2026-11-12T18:18:16.275956+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
