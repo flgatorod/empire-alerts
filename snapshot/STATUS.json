@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 606.0,
+    "age_min": 621.0,
     "file": "2026-11-12-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-12T18:06:08",
+      "as_of": "2026-11-12T18:21:11",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -535,10 +535,10 @@
       }
     },
     "health": {
-      "account_value": 249215.91,
+      "account_value": 249072.98,
       "capital_deployed": 0,
       "cash_available": 498.32,
-      "cash_reserve_pct": 0.1999551312755273,
+      "cash_reserve_pct": 0.20006987510246993,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3667,7 +3667,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-12T23:06:08.291531+00:00",
+        "as_of": "2026-11-12T23:21:11.262612+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3701,8 +3701,8 @@
       }
     }
   },
-  "generated_at": "2026-11-12T23:06:06.562680+00:00",
-  "generated_at_et": "2026-11-12 18:06 EST",
+  "generated_at": "2026-11-12T23:21:10.322072+00:00",
+  "generated_at_et": "2026-11-12 18:21 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3924,11 +3924,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 126.1,
+  "positions_handoff_age_min": 141.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-12T23:05:03.690781+00:00",
-    "last_pull_ok": "2026-11-12T23:05:03.690781+00:00",
+    "last_poll": "2026-11-12T23:21:06.110103+00:00",
+    "last_pull_ok": "2026-11-12T23:21:06.110103+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
