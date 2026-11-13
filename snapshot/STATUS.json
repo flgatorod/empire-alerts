@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 310.5,
+    "age_min": 325.6,
     "file": "2026-11-13-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-13T13:10:42",
+      "as_of": "2026-11-13T13:25:46",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -535,10 +535,10 @@
       }
     },
     "health": {
-      "account_value": 239922.79,
+      "account_value": 240719.65,
       "capital_deployed": 0,
       "cash_available": 548.32,
-      "cash_reserve_pct": 0.22854018995027525,
+      "cash_reserve_pct": 0.22778364790743094,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -567,7 +567,7 @@
       "term_structure": "contango",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 19.8,
+      "vix": 19.6,
       "vix_regime": "normal",
       "weekly_pnl_pct": 0.0
     },
@@ -3673,7 +3673,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-13T18:10:42.748468+00:00",
+        "as_of": "2026-11-13T18:25:46.552034+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3707,8 +3707,8 @@
       }
     }
   },
-  "generated_at": "2026-11-13T18:10:40.901679+00:00",
-  "generated_at_et": "2026-11-13 13:10 EST",
+  "generated_at": "2026-11-13T18:25:45.336567+00:00",
+  "generated_at_et": "2026-11-13 13:25 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3891,12 +3891,6 @@
         "2026-11-13 07:01:37,132 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
         "2026-11-13 07:01:37,871 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=34: ABBV, ABNB, AMZN, ANET, BMY, BRK-B, BRK.B, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, NXE, OKLO, OXY, PEP, PM, PSX, PYPL, QBTS, RBLX, RGTI, SHOP, SQ, TMUS, VRT, VRTX "
       ]
-    },
-    "dashboard.log": {
-      "count_today": 1,
-      "last": [
-        "2026-11-13 09:46:14,433 [empire.technical] WARNING: price_history(GLD) failed: Expecting value: line 3 column 9 (char 22)"
-      ]
     }
   },
   "positions_handoff": {
@@ -3905,11 +3899,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 10.7,
+  "positions_handoff_age_min": 25.7,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-13T18:09:56.489506+00:00",
-    "last_pull_ok": "2026-11-13T18:09:56.489506+00:00",
+    "last_poll": "2026-11-13T18:23:58.390962+00:00",
+    "last_pull_ok": "2026-11-13T18:23:58.390962+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
