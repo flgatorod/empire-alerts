@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 957.9,
+    "age_min": 973.0,
     "file": "2026-11-13-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-13T23:58:06",
+      "as_of": "2026-11-14T00:13:09",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -3673,7 +3673,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-14T04:58:06.175666+00:00",
+        "as_of": "2026-11-14T05:13:09.973901+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3707,8 +3707,8 @@
       }
     }
   },
-  "generated_at": "2026-11-14T04:58:05.075874+00:00",
-  "generated_at_et": "2026-11-13 23:58 EST",
+  "generated_at": "2026-11-14T05:13:08.085645+00:00",
+  "generated_at_et": "2026-11-14 00:13 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3883,51 +3883,18 @@
       "running": false
     }
   ],
-  "log_flags_today": {
-    "benchmark_record.log": {
-      "count_today": 63,
-      "last": [
-        "2026-11-13 21:12:02,072 [empire.benchmark_record] INFO: DARK: LADDER EMPTY (0 of 4); engine collateral $600,000.00; ladder collateral $0.00; realized to date NOT AVAILABLE; risk-free 4.28% (DGS3MO 2026-11-12, lag 1 business day, DGS3MO_LIVE); costs none/1.0 \u2014 empty or errored payload",
-        "2026-11-13 21:12:02,074 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-13: OSError: dark",
-        "2026-11-13 21:12:02,074 [empire.risk_free] ERROR: DGS3MO fetch failed for session 2026-11-13: OSError: dark"
-      ]
-    },
-    "calendar-refresh.log": {
-      "count_today": 79,
-      "last": [
-        "2026-11-13 07:01:36,561 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: XLY\"}}}",
-        "2026-11-13 07:01:37,132 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
-        "2026-11-13 07:01:37,871 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=34: ABBV, ABNB, AMZN, ANET, BMY, BRK-B, BRK.B, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, NXE, OKLO, OXY, PEP, PM, PSX, PYPL, QBTS, RBLX, RGTI, SHOP, SQ, TMUS, VRT, VRTX "
-      ]
-    },
-    "dividend_capture.log": {
-      "count_today": 35,
-      "last": [
-        "2026-11-13 21:12:04,227 [empire.dividend_capture] ERROR: ZZHR: capture RAISED (RuntimeError('vendor exploded on ZZHR')) \u2014 recorded MISSING for this session",
-        "2026-11-13 21:12:04,227 [empire.dividend_capture] INFO: ZZHR   2026-07-07  MISSING \u2014 capture raised: RuntimeError('vendor exploded on ZZHR')",
-        "2026-11-13 21:12:04,227 [empire.dividend_capture] INFO: ZZHR   2026-07-07  yield MISSING \u2014 NOT RANKED (capture raised: RuntimeError('vendor exploded on ZZHR'))"
-      ]
-    },
-    "gex_record.log": {
-      "count_today": 18,
-      "last": [
-        "2026-11-13 21:08:37,228 [empire.gex_record] INFO: ZZD: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload",
-        "2026-11-13 21:12:00,018 [empire.gex_record] INFO: ZZC: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload",
-        "2026-11-13 21:12:00,018 [empire.gex_record] INFO: ZZD: NO_QUOTE used=0 seen=0 net_gex=NOT AVAILABLE detail=empty or errored payload"
-      ]
-    }
-  },
+  "log_flags_today": {},
   "positions_handoff": {
     "last_updated": "2026-11-13T21:00:07.380657+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 478.0,
+  "positions_handoff_age_min": 493.0,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-14T04:57:31.581020+00:00",
-    "last_pull_ok": "2026-11-14T04:57:31.581020+00:00",
+    "last_poll": "2026-11-14T05:11:33.776080+00:00",
+    "last_pull_ok": "2026-11-14T05:11:33.776080+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
