@@ -1,17 +1,18 @@
-# Empire Daily Briefing — 2026-11-13
-_Generated 2026-11-13 08:00:05 _
+# Empire Daily Briefing — 2026-11-16
+_Generated 2026-11-16 08:00:03 _
 
 ## 1. Market State
 
-- **VIX** 18.32 (-2.03% vs prev close)
-- **S&P 500** ~7,590 (SPY $759.02, +0.25%)
-- **Oil (USO)** $145.46 (-0.42%)
-- **BTC (IBIT)** $39.10 (-3.12%)
+- **VIX** 20.60 (+6.74% vs prev close)
+- **S&P 500** ~7,498 (SPY $749.78, -0.61%)
+- **Oil (USO)** $143.51 (-1.42%)
+- **BTC (IBIT)** $36.28 (-6.83%)
 - **Regime**: MODERATE
   > MODERATE (owner ruling 2026-11-06, EFFECTIVE 2026-11-05, recorded 2026-11-06): the ruled `to_moderate` trigger breached on the 2026-11-05 close, VIX 28.18 > 27 — the only close above 27 in 65 recorded sessions, reached from a 16.61 close the session before. 5-day avg 21.24, 14-day 19.08, 16 of 65 closes above 17, 3 above 20. Posture knobs UNCHANGED and NO-RETRO: 65/85 edge floors, 7-day earnings blackout, semi block, csp_vix_minimum 14, 50% target / 2.0x stop / 0.70 roll / 1-DTE time stop all hold. The C2 CSP floor is NOT binding in this band (VIX 28.18, 14.18 points clear) — cohort quality, not volatility, is still the constraint. NOTHING HAS OPENED SINCE 2026-10-29: the kill switch has been tripped since 2026-11-03 and the reset is Peter's typed action. READ THE BREACH WITH ITS CAVEATS: it is single-armed, and 'sustained' with no day count is a single-close check — under a 2-day reading it is not breached. SEPARATELY: the six trigger questions are DEFERRED to a trigger-table v2 spec after the deploy reference (owner ruling 2026-11-06 evening, item C). The label is NARRATIVE ONLY — csp_enabled and csp_vix_minimum are the only regime knobs that gate, both unchanged — so an odd direction word is a wrong sentence, not a wrong trade. The watcher's private band table is GONE: its ladder now derives from this file's own regime_change_triggers (#85, closed).
-- **Sector leaders**: Energy +0.50%, Financials +0.40%, Materials +0.38%
-- **Sector laggards**: Tech -0.18%, Indust +0.00%, Staples +0.00%
-- **Triggers**: none armed
+- **Sector leaders**: Health +0.98%, Staples +0.71%, REIT +0.29%
+- **Sector laggards**: Tech -2.01%, Indust -0.75%, Energy -0.55%
+- **Triggers armed**:
+  - ⚠ VIX 20.6 ≥ 20 (would arm LOW-ELEVATED)
 
 ## 2. Open Positions
 
@@ -21,7 +22,7 @@ _No open positions._
 
 ## 3. Events This Week
 
-- **Fri 11/13** — OPEX: Weekly Options Expiration
+- **Fri 11/20** — Monthly opex Friday
 - **Fri 11/20** — OPEX: Monthly Options Expiration (Nov 2026)
 - **Fri 11/27** — OPEX: Weekly Options Expiration
 - Tue 11/17 — HD earnings — HD Earnings Report
@@ -40,10 +41,10 @@ _No open positions._
 ## 4. Paper Trading Activity
 
 - **Open**: 15 single-leg + 10 spreads
-- **Yesterday**: +4 opens, 4 closes ($42.00 realized)
-- **Total closed**: 281 (73% win rate, $3,303.00 total PnL)
-- **Real-eligible vs paper-only**: 161 real / 135 paper
-  - real_eligible: 161 opened, 147 closed, win_rate=67%, avg=$-13
+- **Yesterday**: +0 opens, 0 closes ($0.00 realized)
+- **Total closed**: 283 (73% win rate, $3,397.00 total PnL)
+- **Real-eligible vs paper-only**: 163 real / 135 paper
+  - real_eligible: 163 opened, 149 closed, win_rate=68%, avg=$-12
   - paper_only: 135 opened, 134 closed, win_rate=78%, avg=$38
 
 ## 5. Action Items
@@ -52,8 +53,8 @@ _No open positions._
 
 ## 6. System Health
 
-- ✓ Token: 3d old, 4d remaining (source: refresh_token_issued) — healthy
-- ✓ Dashboard: 238ms
+- ⚠ Token: 6d old, 1d remaining (source: refresh_token_issued) — warn
+- ✓ Dashboard: 290ms
 - ✓ Launchd jobs loaded: 29 com.empire.*
-- Positions sync: 1-12 16:00:03,695 [empire.positions_sync] INFO: === SYNC COMPLETE: 0 closed, 0 inserted, drift 0 ===
-- ✓ No recent errors in *.err logs
+- Positions sync: 1-13 16:00:07,382 [empire.positions_sync] INFO: === SYNC COMPLETE: 0 closed, 0 inserted, drift 0 ===
+- ⚠ Recent errors in: dashboard.err
