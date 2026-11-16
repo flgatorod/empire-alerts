@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 3594.0,
+    "age_min": 3609.1,
     "file": "2026-11-13-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-15T19:54:11",
+      "as_of": "2026-11-15T20:09:14",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -535,10 +535,10 @@
       }
     },
     "health": {
-      "account_value": 241572.49,
+      "account_value": 238953.41,
       "capital_deployed": 0,
       "cash_available": 548.32,
-      "cash_reserve_pct": 0.22697948760639097,
+      "cash_reserve_pct": 0.22946732586908886,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3673,7 +3673,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-16T00:54:11.713118+00:00",
+        "as_of": "2026-11-16T01:09:14.970789+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3707,8 +3707,8 @@
       }
     }
   },
-  "generated_at": "2026-11-16T00:54:10.590962+00:00",
-  "generated_at_et": "2026-11-15 19:54 EST",
+  "generated_at": "2026-11-16T01:09:13.656003+00:00",
+  "generated_at_et": "2026-11-15 20:09 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3890,15 +3890,15 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 3114.1,
+  "positions_handoff_age_min": 3129.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-16T00:52:59.905250+00:00",
-    "last_pull_ok": "2026-11-16T00:52:59.905250+00:00",
+    "last_poll": "2026-11-16T01:09:02.457681+00:00",
+    "last_pull_ok": "2026-11-16T01:07:02.106206+00:00",
     "pending": 0,
-    "pull_error": "",
-    "pull_failures": 0,
-    "pull_ok": true,
+    "pull_error": "fatal: unable to access 'https://github.com/flgatorod/empire-alerts.git/': The requested URL returned error: 503",
+    "pull_failures": 1,
+    "pull_ok": false,
     "rejected_this_run": 0,
     "sent_this_run": 0,
     "sent_today": 0
