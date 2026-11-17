@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 825.6,
+    "age_min": 840.6,
     "file": "2026-11-16-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-16T21:45:41",
+      "as_of": "2026-11-16T22:00:44",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -535,7 +535,7 @@
       }
     },
     "health": {
-      "account_value": 231194.31,
+      "account_value": 231089.41,
       "capital_deployed": 0,
       "cash_available": 0.0,
       "cash_reserve_pct": 0.0,
@@ -3693,7 +3693,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-17T02:45:41.649926+00:00",
+        "as_of": "2026-11-17T03:00:44.558111+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3727,8 +3727,8 @@
       }
     }
   },
-  "generated_at": "2026-11-17T02:45:40.656333+00:00",
-  "generated_at_et": "2026-11-16 21:45 EST",
+  "generated_at": "2026-11-17T03:00:43.686750+00:00",
+  "generated_at_et": "2026-11-16 22:00 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3911,13 +3911,6 @@
         "2026-11-16 07:01:38,785 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
         "2026-11-16 07:01:39,617 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=34: ABBV, ABNB, AMZN, ANET, BMY, BRK-B, BRK.B, CCJ, COIN, DKNG, EOG, GOOGL, HOOD, KO, LLY, MCD, MDLZ, MRK, NET, NXE, OKLO, OXY, PEP, PM, PSX, PYPL, QBTS, RBLX, RGTI, SHOP, SQ, TMUS, VRT, VRTX "
       ]
-    },
-    "dashboard.log": {
-      "count_today": 2,
-      "last": [
-        "[Schwabdev] After authorizing, paste the address bar url here: 2026-11-16 21:15:34,842 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: EOFError: EOF when reading a line",
-        "2026-11-16 21:15:34,843 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction)."
-      ]
     }
   },
   "positions_handoff": {
@@ -3926,11 +3919,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 345.6,
+  "positions_handoff_age_min": 360.7,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-17T02:45:23.232838+00:00",
-    "last_pull_ok": "2026-11-17T02:45:23.232838+00:00",
+    "last_poll": "2026-11-17T02:59:25.375149+00:00",
+    "last_pull_ok": "2026-11-17T02:59:25.375149+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
