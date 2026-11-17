@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 530.0,
+    "age_min": 545.1,
     "file": "2026-11-17-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-17T16:50:09",
+      "as_of": "2026-11-17T17:05:13",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -541,7 +541,7 @@
       }
     },
     "health": {
-      "account_value": 229468.38,
+      "account_value": 228224.28,
       "capital_deployed": 0,
       "cash_available": 0.0,
       "cash_reserve_pct": 0.0,
@@ -3709,7 +3709,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-17T21:50:10.011357+00:00",
+        "as_of": "2026-11-17T22:05:13.403115+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3743,8 +3743,8 @@
       }
     }
   },
-  "generated_at": "2026-11-17T21:50:07.750122+00:00",
-  "generated_at_et": "2026-11-17 16:50 EST",
+  "generated_at": "2026-11-17T22:05:12.131846+00:00",
+  "generated_at_et": "2026-11-17 17:05 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3942,11 +3942,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 50.1,
+  "positions_handoff_age_min": 65.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-17T21:48:31.891578+00:00",
-    "last_pull_ok": "2026-11-17T21:48:31.891578+00:00",
+    "last_poll": "2026-11-17T22:04:34.317630+00:00",
+    "last_pull_ok": "2026-11-17T22:04:34.317630+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
