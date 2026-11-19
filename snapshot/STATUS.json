@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 1259.0,
+    "age_min": 1274.1,
     "file": "2026-11-18-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-19T04:59:07",
+      "as_of": "2026-11-19T05:14:10",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -544,7 +544,7 @@
       }
     },
     "health": {
-      "account_value": 230520.23,
+      "account_value": 230617.81,
       "capital_deployed": 0,
       "cash_available": 0.0,
       "cash_reserve_pct": 0.0,
@@ -3716,7 +3716,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-19T09:59:07.262496+00:00",
+        "as_of": "2026-11-19T10:14:10.343649+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3750,8 +3750,8 @@
       }
     }
   },
-  "generated_at": "2026-11-19T09:59:05.198378+00:00",
-  "generated_at_et": "2026-11-19 04:59 EST",
+  "generated_at": "2026-11-19T10:14:09.292076+00:00",
+  "generated_at_et": "2026-11-19 05:14 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3933,11 +3933,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 779.0,
+  "positions_handoff_age_min": 794.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-19T09:58:50.818992+00:00",
-    "last_pull_ok": "2026-11-19T09:58:50.818992+00:00",
+    "last_poll": "2026-11-19T10:12:52.787825+00:00",
+    "last_pull_ok": "2026-11-19T10:12:52.787825+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
