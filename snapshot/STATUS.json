@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 210.6,
+    "age_min": 225.7,
     "file": "2026-11-19-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-19T11:30:47",
+      "as_of": "2026-11-19T11:45:54",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -550,10 +550,10 @@
       }
     },
     "health": {
-      "account_value": 228679.26,
+      "account_value": 228633.89,
       "capital_deployed": 0,
       "cash_available": 591.9,
-      "cash_reserve_pct": 0.2588341417581988,
+      "cash_reserve_pct": 0.2588855046817425,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -582,7 +582,7 @@
       "term_structure": "backwardation",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 24.9,
+      "vix": 24.8,
       "vix_regime": "elevated",
       "weekly_pnl_pct": 0.0
     },
@@ -3730,7 +3730,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-19T16:30:47.896222+00:00",
+        "as_of": "2026-11-19T16:45:54.221950+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3764,8 +3764,8 @@
       }
     }
   },
-  "generated_at": "2026-11-19T16:30:45.578745+00:00",
-  "generated_at_et": "2026-11-19 11:30 EST",
+  "generated_at": "2026-11-19T16:45:50.206929+00:00",
+  "generated_at_et": "2026-11-19 11:45 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3792,7 +3792,7 @@
     {
       "label": "com.empire.chain-round",
       "last_exit": 0,
-      "running": true
+      "running": false
     },
     {
       "label": "com.empire.csp-execution",
@@ -3964,11 +3964,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 0.7,
+  "positions_handoff_age_min": 15.8,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-19T16:29:53.430329+00:00",
-    "last_pull_ok": "2026-11-19T16:29:53.430329+00:00",
+    "last_poll": "2026-11-19T16:43:55.774926+00:00",
+    "last_pull_ok": "2026-11-19T16:43:55.774926+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
