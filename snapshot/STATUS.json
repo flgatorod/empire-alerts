@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 105.2,
+    "age_min": 120.2,
     "file": "2026-11-19-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-19T09:45:18",
+      "as_of": "2026-11-19T10:00:21",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -550,7 +550,7 @@
       }
     },
     "health": {
-      "account_value": 233055.93,
+      "account_value": 231513.02,
       "capital_deployed": 0,
       "cash_available": 0.0,
       "cash_reserve_pct": 0.0,
@@ -582,7 +582,7 @@
       "term_structure": "contango",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 22.5,
+      "vix": 23.0,
       "vix_regime": "elevated",
       "weekly_pnl_pct": 0.0
     },
@@ -3726,7 +3726,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-19T14:45:18.665830+00:00",
+        "as_of": "2026-11-19T15:00:22.040397+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3737,7 +3737,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-19T14:45:10.046166+00:00",
+        "db_mtime": "2026-11-19T15:00:08.107800+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 72102,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3749,19 +3749,19 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-09-17T16:00:11",
-          "last_ok": "2026-11-18T16:01:19",
+          "last_ok": "2026-11-19T09:46:21",
           "streak": 0
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-18T16:03:28",
+          "last_ok": "2026-11-19T09:48:36",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-19T14:45:14.300292+00:00",
-  "generated_at_et": "2026-11-19 09:45 EST",
+  "generated_at": "2026-11-19T15:00:20.596974+00:00",
+  "generated_at_et": "2026-11-19 10:00 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3793,7 +3793,7 @@
     {
       "label": "com.empire.csp-execution",
       "last_exit": 0,
-      "running": true
+      "running": false
     },
     {
       "label": "com.empire.daily-briefing",
@@ -3858,7 +3858,7 @@
     {
       "label": "com.empire.paper-execution",
       "last_exit": 0,
-      "running": true
+      "running": false
     },
     {
       "label": "com.empire.positions-sync",
@@ -3893,7 +3893,7 @@
     {
       "label": "com.empire.spread-execution",
       "last_exit": 0,
-      "running": true
+      "running": false
     },
     {
       "label": "com.empire.token-check",
@@ -3946,24 +3946,25 @@
       ]
     },
     "dashboard.log": {
-      "count_today": 2,
+      "count_today": 4,
       "last": [
-        "2026-11-19 09:45:09,687 [empire.spread_scanners] WARNING: IC scan SPY chain failed: Expecting value: line 3 column 9 (char 22)",
-        "2026-11-19 09:45:14,504 [wheel.signal_engine] WARNING: IV/HV spread calc failed for XOM: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-19 09:45:14,504 [wheel.signal_engine] WARNING: IV/HV spread calc failed for XOM: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-19 09:47:01,235 [wheel.signal_engine] WARNING: IV/HV spread calc failed for CSCO: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-19 09:48:05,742 [wheel.signal_engine] WARNING: IV/HV spread calc failed for LRCX: Expecting value: line 3 column 9 (char 22)"
       ]
     }
   },
   "positions_handoff": {
-    "last_updated": "2026-11-19T14:30:07.233316+00:00",
+    "last_updated": "2026-11-19T15:00:08.112235+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 15.2,
+  "positions_handoff_age_min": 0.2,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-19T14:43:35.632718+00:00",
-    "last_pull_ok": "2026-11-19T14:43:35.632718+00:00",
+    "last_poll": "2026-11-19T14:59:38.354991+00:00",
+    "last_pull_ok": "2026-11-19T14:59:38.354991+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
