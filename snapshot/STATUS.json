@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 96.1,
+    "age_min": 111.1,
     "file": "2026-11-20-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-20T09:36:11",
+      "as_of": "2026-11-20T09:51:14",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -156,9 +156,9 @@
           "gap": null,
           "key": "1a",
           "met": true,
-          "n": 146,
+          "n": 147,
           "name": "qualifying trades",
-          "observed": 146,
+          "observed": 147,
           "required": ">=25",
           "status": "PASS"
         },
@@ -166,10 +166,10 @@
           "gap": null,
           "key": "1b",
           "met": true,
-          "n": 50,
+          "n": 51,
           "n_basis": "managed exits in the qualifying set",
           "name": "managed losses",
-          "observed": 31,
+          "observed": 32,
           "required": ">=4",
           "status": "PASS"
         },
@@ -177,9 +177,9 @@
           "gap": null,
           "key": "2a",
           "met": true,
-          "n": 92,
+          "n": 93,
           "name": "qualifying CSPs",
-          "observed": 92,
+          "observed": 93,
           "required": ">=10",
           "status": "PASS"
         },
@@ -187,10 +187,10 @@
           "gap": null,
           "key": "2b",
           "met": true,
-          "n": 31,
+          "n": 32,
           "n_basis": "CSP managed exits in the qualifying set",
           "name": "CSP managed losses",
-          "observed": 31,
+          "observed": 32,
           "required": ">=1",
           "status": "PASS"
         },
@@ -199,12 +199,12 @@
           "gap": null,
           "key": "3",
           "met": true,
-          "n": 146,
+          "n": 147,
           "name": "cohort holistic net P&L",
-          "observed": 9054.0,
+          "observed": 8924.0,
           "required": ">0",
           "status": "PASS",
-          "top2_contribution_pct": 105.3
+          "top2_contribution_pct": 106.9
         },
         {
           "by_reason": {
@@ -216,8 +216,8 @@
             },
             "STOP_LOSS": {
               "coverage_pct": 100.0,
-              "covered": 50,
-              "n": 50,
+              "covered": 51,
+              "n": 51,
               "status": "PASS"
             },
             "TRIGGER_CLOSE": {
@@ -231,7 +231,7 @@
           "key": "4",
           "met": true,
           "missing": 0,
-          "n": 50,
+          "n": 51,
           "name": "close_delta coverage on managed exits",
           "observed": 100.0,
           "required": "100%",
@@ -248,7 +248,7 @@
             "2026-10",
             "2026-11"
           ],
-          "n": 146,
+          "n": 147,
           "name": "cohort span",
           "observed": 4,
           "required": ">=2 entry-month buckets",
@@ -302,20 +302,20 @@
         "backfilled_rows": 0,
         "by_option_type": {
           "CC": 57,
-          "CSP": 94
+          "CSP": 95
         },
         "by_tier": {
-          "tier_1": 64,
+          "tier_1": 65,
           "tier_2": 42,
           "tier_3": 34,
           "untiered": 11
         },
         "cc_net_basis": {
-          "expectancy": 61.96,
+          "expectancy": 60.7,
           "note": "CC rows adjusted for the share leg (approximation); CSPs unchanged",
-          "rows_computable": 151,
-          "total_pnl": 9356.0,
-          "win_rate_pct": 58.9,
+          "rows_computable": 152,
+          "total_pnl": 9226.0,
+          "win_rate_pct": 58.6,
           "wins": 89
         },
         "cohort_net_positive": true,
@@ -325,11 +325,11 @@
           "2026-08-03",
           "2026-11-17"
         ],
-        "expectancy": -12.66,
+        "expectancy": -13.43,
         "expired_rows": 0,
         "expired_wins_counted_but_1dte_deviations": 0,
-        "losses": 62,
-        "managed_exits": 50,
+        "losses": 63,
+        "managed_exits": 51,
         "managed_exits_net_positive": 19,
         "managed_loss_ids": [
           179,
@@ -360,24 +360,25 @@
           291,
           295,
           299,
+          300,
           306,
           307,
           311
         ],
         "managed_loss_target": 4,
-        "managed_losses": 31,
-        "net_computable_rows": 151,
-        "net_pnl": 9356.0,
+        "managed_losses": 32,
+        "net_computable_rows": 152,
+        "net_pnl": 9226.0,
         "note": "PRE-SYMMETRIZATION population: cohort rows INCLUDING the dark-window-stamped ones. Retained so the 2026-09-17 symmetrization ruling's impact is auditable from the payload; the gate counts `strict`, never this.",
-        "profit_factor": 0.71,
-        "qualifying": 151,
+        "profit_factor": 0.7,
+        "qualifying": 152,
         "qualifying_target": 25,
-        "settled_rows": 151,
-        "total_pnl_book": -1912.0,
+        "settled_rows": 152,
+        "total_pnl_book": -2042.0,
         "unmanaged_loss_flags": [],
         "win_definition": "net-positive (holistic; CC net = option leg + share-leg drift approximation until assignment modeling exists)",
-        "win_rate_book_pct": 66.9,
-        "win_rate_pct": 58.9,
+        "win_rate_book_pct": 66.4,
+        "win_rate_pct": 58.6,
         "wins": 89,
         "wins_book_option_leg": 101
       },
@@ -389,20 +390,20 @@
         "backfilled_rows": 0,
         "by_option_type": {
           "CC": 54,
-          "CSP": 92
+          "CSP": 93
         },
         "by_tier": {
-          "tier_1": 62,
+          "tier_1": 63,
           "tier_2": 42,
           "tier_3": 32,
           "untiered": 10
         },
         "cc_net_basis": {
-          "expectancy": 62.01,
+          "expectancy": 60.71,
           "note": "CC rows adjusted for the share leg (approximation); CSPs unchanged",
-          "rows_computable": 146,
-          "total_pnl": 9054.0,
-          "win_rate_pct": 57.5,
+          "rows_computable": 147,
+          "total_pnl": 8924.0,
+          "win_rate_pct": 57.1,
           "wins": 84
         },
         "cohort_net_positive": true,
@@ -412,11 +413,11 @@
           "2026-08-03",
           "2026-11-17"
         ],
-        "expectancy": -14.62,
+        "expectancy": -15.4,
         "expired_rows": 0,
         "expired_wins_counted_but_1dte_deviations": 0,
-        "losses": 62,
-        "managed_exits": 50,
+        "losses": 63,
+        "managed_exits": 51,
         "managed_exits_net_positive": 19,
         "managed_loss_ids": [
           179,
@@ -447,24 +448,25 @@
           291,
           295,
           299,
+          300,
           306,
           307,
           311
         ],
         "managed_loss_target": 4,
-        "managed_losses": 31,
-        "net_computable_rows": 146,
-        "net_pnl": 9054.0,
+        "managed_losses": 32,
+        "net_computable_rows": 147,
+        "net_pnl": 8924.0,
         "note": "strict set re-filtered by CURRENT policy \u2014 rme predicate v2.1: G3 delta band 0.20-0.30, score/tier terms removed (owner ruling 2026-08-13). Rows without a recorded entry delta are excluded (fail closed); historical pause windows not reconstructed.",
-        "profit_factor": 0.68,
-        "qualifying": 146,
+        "profit_factor": 0.66,
+        "qualifying": 147,
         "qualifying_target": 25,
-        "settled_rows": 146,
-        "total_pnl_book": -2134.0,
+        "settled_rows": 147,
+        "total_pnl_book": -2264.0,
         "unmanaged_loss_flags": [],
         "win_definition": "net-positive (holistic; CC net = option leg + share-leg drift approximation until assignment modeling exists)",
-        "win_rate_book_pct": 65.8,
-        "win_rate_pct": 57.5,
+        "win_rate_book_pct": 65.3,
+        "win_rate_pct": 57.1,
         "wins": 84,
         "wins_book_option_leg": 96
       },
@@ -476,20 +478,20 @@
         "backfilled_rows": 0,
         "by_option_type": {
           "CC": 54,
-          "CSP": 92
+          "CSP": 93
         },
         "by_tier": {
-          "tier_1": 62,
+          "tier_1": 63,
           "tier_2": 42,
           "tier_3": 32,
           "untiered": 10
         },
         "cc_net_basis": {
-          "expectancy": 62.01,
+          "expectancy": 60.71,
           "note": "CC rows adjusted for the share leg (approximation); CSPs unchanged",
-          "rows_computable": 146,
-          "total_pnl": 9054.0,
-          "win_rate_pct": 57.5,
+          "rows_computable": 147,
+          "total_pnl": 8924.0,
+          "win_rate_pct": 57.1,
           "wins": 84
         },
         "cohort_net_positive": true,
@@ -499,11 +501,11 @@
           "2026-08-03",
           "2026-11-17"
         ],
-        "expectancy": -14.62,
+        "expectancy": -15.4,
         "expired_rows": 0,
         "expired_wins_counted_but_1dte_deviations": 0,
-        "losses": 62,
-        "managed_exits": 50,
+        "losses": 63,
+        "managed_exits": 51,
         "managed_exits_net_positive": 19,
         "managed_loss_ids": [
           179,
@@ -534,32 +536,33 @@
           291,
           295,
           299,
+          300,
           306,
           307,
           311
         ],
         "managed_loss_target": 4,
-        "managed_losses": 31,
-        "net_computable_rows": 146,
-        "net_pnl": 9054.0,
-        "profit_factor": 0.68,
-        "qualifying": 146,
+        "managed_losses": 32,
+        "net_computable_rows": 147,
+        "net_pnl": 8924.0,
+        "profit_factor": 0.66,
+        "qualifying": 147,
         "qualifying_target": 25,
-        "settled_rows": 146,
-        "total_pnl_book": -2134.0,
+        "settled_rows": 147,
+        "total_pnl_book": -2264.0,
         "unmanaged_loss_flags": [],
         "win_definition": "net-positive (holistic; CC net = option leg + share-leg drift approximation until assignment modeling exists)",
-        "win_rate_book_pct": 65.8,
-        "win_rate_pct": 57.5,
+        "win_rate_book_pct": 65.3,
+        "win_rate_pct": 57.1,
         "wins": 84,
         "wins_book_option_leg": 96
       }
     },
     "health": {
-      "account_value": 216679.54,
+      "account_value": 216643.17,
       "capital_deployed": 0,
       "cash_available": 641.9,
-      "cash_reserve_pct": 0.29624393701408075,
+      "cash_reserve_pct": 0.2962936703704991,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -588,7 +591,7 @@
       "term_structure": "backwardation",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 29.0,
+      "vix": 28.8,
       "vix_regime": "high",
       "weekly_pnl_pct": 0.0
     },
@@ -1969,8 +1972,8 @@
           "CSP": {
             "bases": {
               "book": {
-                "annualized_yield": 0.10943854423002201,
-                "avg_loss": -90.44117647058823,
+                "annualized_yield": 0.10113438887816181,
+                "avg_loss": -91.57142857142857,
                 "avg_win": 59.36144578313253,
                 "basis": "book",
                 "bootstrap": {
@@ -1994,23 +1997,23 @@
                     "2026-W47"
                   ],
                   "expectancy_ci": {
-                    "hi": 39.5300564516129,
-                    "lo": -11.486256481850818,
-                    "mean": 16.007545823012475,
+                    "hi": 39.504539800995026,
+                    "lo": -14.39233746130031,
+                    "mean": 14.868915948227025,
                     "n_rep": 10000
                   },
                   "loss_over_win_ci": {
-                    "hi": 2.0673711557523933,
+                    "hi": 2.0900901481974707,
                     "lo": 1.019292325268429,
-                    "mean": 1.5052678577257965,
+                    "mean": 1.5187319246996078,
                     "n_rep": 10000
                   },
                   "n_blocks": 17,
                   "thin": false,
                   "win_rate_ci": {
-                    "hi": 0.8294656110836218,
-                    "lo": 0.5645057899090158,
-                    "mean": 0.7083595432452887,
+                    "hi": 0.828950179937022,
+                    "lo": 0.5508474576271186,
+                    "mean": 0.7028119099816958,
                     "n_rep": 10000
                   }
                 },
@@ -2018,7 +2021,7 @@
                 "collateral_modelled": false,
                 "concentration": {
                   "badge": false,
-                  "badge_text": "CONCENTRATED \u2014 top 3 = -39.4% (#paper_trades:286, #paper_trades:203, #paper_trades:306)",
+                  "badge_text": "CONCENTRATED \u2014 top 3 = -42.3% (#paper_trades:286, #paper_trades:203, #paper_trades:306)",
                   "ids": [
                     "paper_trades:286",
                     "paper_trades:203",
@@ -2032,30 +2035,30 @@
                     "BX",
                     "SBUX"
                   ],
-                  "top1": -0.15550755939524838,
-                  "top3": -0.3936285097192225
+                  "top1": -0.1672473867595819,
+                  "top3": -0.42334494773519166
                 },
                 "ex_top_contributors": {
-                  "expectancy": 22.640350877192983,
+                  "expectancy": 21.31304347826087,
                   "ids": [
                     "paper_trades:286",
                     "paper_trades:203",
                     "paper_trades:306"
                   ],
-                  "n_remaining": 114,
+                  "n_remaining": 115,
                   "state": "OK",
                   "tickers": [
                     "NOW",
                     "BX",
                     "SBUX"
                   ],
-                  "value": 2581.0
+                  "value": 2451.0
                 },
-                "expectancy": 15.82905982905983,
+                "expectancy": 14.59322033898305,
                 "expectancy_ci": {
-                  "hi": 39.5300564516129,
-                  "lo": -11.486256481850818,
-                  "mean": 16.007545823012475,
+                  "hi": 39.504539800995026,
+                  "lo": -14.39233746130031,
+                  "mean": 14.868915948227025,
                   "n_rep": 10000
                 },
                 "expectancy_verdict": {
@@ -2178,17 +2181,18 @@
                   "paper_trades:294",
                   "paper_trades:295",
                   "paper_trades:299",
+                  "paper_trades:300",
                   "paper_trades:303",
                   "paper_trades:306",
                   "paper_trades:307",
                   "paper_trades:311"
                 ],
                 "lane": "PAPER",
-                "loss_over_win": 1.523567616614334,
+                "loss_over_win": 1.5426077879903737,
                 "loss_over_win_ci": {
-                  "hi": 2.0673711557523933,
+                  "hi": 2.0900901481974707,
                   "lo": 1.019292325268429,
-                  "mean": 1.5052678577257965,
+                  "mean": 1.5187319246996078,
                   "n_rep": 10000
                 },
                 "loss_side_bar": 1.5,
@@ -2198,30 +2202,30 @@
                   "text": "UNRESOLVED (CI spans 1.5x, point over)",
                   "tone": "amber"
                 },
-                "max_drawdown": -1130.0,
+                "max_drawdown": -1260.0,
                 "max_drawdown_badge": "LOWER BOUND \u2014 realized closes only",
-                "n": 117,
+                "n": 118,
                 "n_blocks": 17,
-                "n_losses": 34,
+                "n_losses": 35,
                 "n_scratch": 0,
                 "n_wins": 83,
                 "share_leg_total": 0.0,
                 "state": "OK",
                 "thin": false,
                 "thin_badge": null,
-                "total": 1852.0,
-                "win_rate": 0.7094017094017094,
+                "total": 1722.0,
+                "win_rate": 0.7033898305084746,
                 "win_rate_ci": {
-                  "hi": 0.8294656110836218,
-                  "lo": 0.5645057899090158,
-                  "mean": 0.7083595432452887,
+                  "hi": 0.828950179937022,
+                  "lo": 0.5508474576271186,
+                  "mean": 0.7028119099816958,
                   "n_rep": 10000
                 },
                 "yield_badges": []
               },
               "net": {
-                "annualized_yield": 0.10943854423002201,
-                "avg_loss": -90.44117647058823,
+                "annualized_yield": 0.10113438887816181,
+                "avg_loss": -91.57142857142857,
                 "avg_win": 59.36144578313253,
                 "basis": "net",
                 "bootstrap": {
@@ -2245,23 +2249,23 @@
                     "2026-W47"
                   ],
                   "expectancy_ci": {
-                    "hi": 39.5300564516129,
-                    "lo": -11.486256481850818,
-                    "mean": 16.007545823012475,
+                    "hi": 39.504539800995026,
+                    "lo": -14.39233746130031,
+                    "mean": 14.868915948227025,
                     "n_rep": 10000
                   },
                   "loss_over_win_ci": {
-                    "hi": 2.0673711557523933,
+                    "hi": 2.0900901481974707,
                     "lo": 1.019292325268429,
-                    "mean": 1.5052678577257965,
+                    "mean": 1.5187319246996078,
                     "n_rep": 10000
                   },
                   "n_blocks": 17,
                   "thin": false,
                   "win_rate_ci": {
-                    "hi": 0.8294656110836218,
-                    "lo": 0.5645057899090158,
-                    "mean": 0.7083595432452887,
+                    "hi": 0.828950179937022,
+                    "lo": 0.5508474576271186,
+                    "mean": 0.7028119099816958,
                     "n_rep": 10000
                   }
                 },
@@ -2269,7 +2273,7 @@
                 "collateral_modelled": false,
                 "concentration": {
                   "badge": false,
-                  "badge_text": "CONCENTRATED \u2014 top 3 = -39.4% (#paper_trades:286, #paper_trades:203, #paper_trades:306)",
+                  "badge_text": "CONCENTRATED \u2014 top 3 = -42.3% (#paper_trades:286, #paper_trades:203, #paper_trades:306)",
                   "ids": [
                     "paper_trades:286",
                     "paper_trades:203",
@@ -2283,30 +2287,30 @@
                     "BX",
                     "SBUX"
                   ],
-                  "top1": -0.15550755939524838,
-                  "top3": -0.3936285097192225
+                  "top1": -0.1672473867595819,
+                  "top3": -0.42334494773519166
                 },
                 "ex_top_contributors": {
-                  "expectancy": 22.640350877192983,
+                  "expectancy": 21.31304347826087,
                   "ids": [
                     "paper_trades:286",
                     "paper_trades:203",
                     "paper_trades:306"
                   ],
-                  "n_remaining": 114,
+                  "n_remaining": 115,
                   "state": "OK",
                   "tickers": [
                     "NOW",
                     "BX",
                     "SBUX"
                   ],
-                  "value": 2581.0
+                  "value": 2451.0
                 },
-                "expectancy": 15.82905982905983,
+                "expectancy": 14.59322033898305,
                 "expectancy_ci": {
-                  "hi": 39.5300564516129,
-                  "lo": -11.486256481850818,
-                  "mean": 16.007545823012475,
+                  "hi": 39.504539800995026,
+                  "lo": -14.39233746130031,
+                  "mean": 14.868915948227025,
                   "n_rep": 10000
                 },
                 "expectancy_verdict": {
@@ -2429,17 +2433,18 @@
                   "paper_trades:294",
                   "paper_trades:295",
                   "paper_trades:299",
+                  "paper_trades:300",
                   "paper_trades:303",
                   "paper_trades:306",
                   "paper_trades:307",
                   "paper_trades:311"
                 ],
                 "lane": "PAPER",
-                "loss_over_win": 1.523567616614334,
+                "loss_over_win": 1.5426077879903737,
                 "loss_over_win_ci": {
-                  "hi": 2.0673711557523933,
+                  "hi": 2.0900901481974707,
                   "lo": 1.019292325268429,
-                  "mean": 1.5052678577257965,
+                  "mean": 1.5187319246996078,
                   "n_rep": 10000
                 },
                 "loss_side_bar": 1.5,
@@ -2449,30 +2454,30 @@
                   "text": "UNRESOLVED (CI spans 1.5x, point over)",
                   "tone": "amber"
                 },
-                "max_drawdown": -1130.0,
+                "max_drawdown": -1260.0,
                 "max_drawdown_badge": "LOWER BOUND \u2014 realized closes only",
-                "n": 117,
+                "n": 118,
                 "n_blocks": 17,
-                "n_losses": 34,
+                "n_losses": 35,
                 "n_scratch": 0,
                 "n_wins": 83,
                 "share_leg_total": 0.0,
                 "state": "OK",
                 "thin": false,
                 "thin_badge": null,
-                "total": 1852.0,
-                "win_rate": 0.7094017094017094,
+                "total": 1722.0,
+                "win_rate": 0.7033898305084746,
                 "win_rate_ci": {
-                  "hi": 0.8294656110836218,
-                  "lo": 0.5645057899090158,
-                  "mean": 0.7083595432452887,
+                  "hi": 0.828950179937022,
+                  "lo": 0.5508474576271186,
+                  "mean": 0.7028119099816958,
                   "n_rep": 10000
                 },
                 "yield_badges": []
               }
             },
             "capture_label": "option leg only, by construction",
-            "capture_rate": 0.15988949322282656,
+            "capture_rate": 0.14749464668094217,
             "era": "cohort",
             "identical_badge": "identical by construction",
             "identical_by_construction": true,
@@ -2484,9 +2489,9 @@
           "spread": {
             "bases": {
               "book": {
-                "annualized_yield": 2.678700688739127,
-                "avg_loss": -81.0,
-                "avg_win": 73.25675675675676,
+                "annualized_yield": 2.61211174849983,
+                "avg_loss": -82.13333333333334,
+                "avg_win": 73.30666666666667,
                 "basis": "book",
                 "bootstrap": {
                   "blocks": [
@@ -2511,23 +2516,23 @@
                     "2026-W47"
                   ],
                   "expectancy_ci": {
-                    "hi": 46.287453967191155,
-                    "lo": 14.953111111111111,
-                    "mean": 30.123742743246257,
+                    "hi": 45.61121794871795,
+                    "lo": 14.175902777777777,
+                    "mean": 29.238303730655595,
                     "n_rep": 10000
                   },
                   "loss_over_win_ci": {
-                    "hi": 1.378369998264232,
-                    "lo": 0.8592659156068385,
-                    "mean": 1.10870242325478,
+                    "hi": 1.393707924508734,
+                    "lo": 0.8640235188754176,
+                    "mean": 1.1212322547888542,
                     "n_rep": 10000
                   },
                   "n_blocks": 19,
                   "thin": false,
                   "win_rate_ci": {
-                    "hi": 0.8181818181818182,
-                    "lo": 0.6228070175438597,
-                    "mean": 0.719980045204422,
+                    "hi": 0.813953488372093,
+                    "lo": 0.6210435571687841,
+                    "mean": 0.7159024624329989,
                     "n_rep": 10000
                   }
                 },
@@ -2535,7 +2540,7 @@
                 "collateral_modelled": false,
                 "concentration": {
                   "badge": false,
-                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.6% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
+                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.7% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
@@ -2549,30 +2554,30 @@
                     "QQQ",
                     "LLY"
                   ],
-                  "top1": -0.054036458333333336,
-                  "top3": -0.056315104166666664
+                  "top1": -0.05471324983520105,
+                  "top3": -0.05702043506921556
                 },
                 "ex_top_contributors": {
-                  "expectancy": 32.45,
+                  "expectancy": 31.441176470588236,
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
                     "spread_trades:111"
                   ],
-                  "n_remaining": 100,
+                  "n_remaining": 102,
                   "state": "OK",
                   "tickers": [
                     "GLD",
                     "QQQ",
                     "LLY"
                   ],
-                  "value": 3245.0
+                  "value": 3207.0
                 },
-                "expectancy": 29.825242718446603,
+                "expectancy": 28.895238095238096,
                 "expectancy_ci": {
-                  "hi": 46.287453967191155,
-                  "lo": 14.953111111111111,
-                  "mean": 30.123742743246257,
+                  "hi": 45.61121794871795,
+                  "lo": 14.175902777777777,
+                  "mean": 29.238303730655595,
                   "n_rep": 10000
                 },
                 "expectancy_verdict": {
@@ -2682,16 +2687,18 @@
                   "spread_trades:173",
                   "spread_trades:174",
                   "spread_trades:175",
+                  "spread_trades:176",
                   "spread_trades:178",
                   "spread_trades:179",
-                  "spread_trades:180"
+                  "spread_trades:180",
+                  "spread_trades:184"
                 ],
                 "lane": "PAPER",
-                "loss_over_win": 1.105700055340343,
+                "loss_over_win": 1.12040742088032,
                 "loss_over_win_ci": {
-                  "hi": 1.378369998264232,
-                  "lo": 0.8592659156068385,
-                  "mean": 1.10870242325478,
+                  "hi": 1.393707924508734,
+                  "lo": 0.8640235188754176,
+                  "mean": 1.1212322547888542,
                   "n_rep": 10000
                 },
                 "loss_side_bar": 1.5,
@@ -2703,21 +2710,21 @@
                 },
                 "max_drawdown": -366.0,
                 "max_drawdown_badge": "LOWER BOUND \u2014 realized closes only",
-                "n": 103,
+                "n": 105,
                 "n_blocks": 19,
-                "n_losses": 29,
+                "n_losses": 30,
                 "n_scratch": 0,
-                "n_wins": 74,
+                "n_wins": 75,
                 "share_leg_total": 0.0,
                 "state": "OK",
                 "thin": false,
                 "thin_badge": null,
-                "total": 3072.0,
-                "win_rate": 0.7184466019417476,
+                "total": 3034.0,
+                "win_rate": 0.7142857142857143,
                 "win_rate_ci": {
-                  "hi": 0.8181818181818182,
-                  "lo": 0.6228070175438597,
-                  "mean": 0.719980045204422,
+                  "hi": 0.813953488372093,
+                  "lo": 0.6210435571687841,
+                  "mean": 0.7159024624329989,
                   "n_rep": 10000
                 },
                 "yield_badges": [
@@ -2725,9 +2732,9 @@
                 ]
               },
               "net": {
-                "annualized_yield": 2.678700688739127,
-                "avg_loss": -81.0,
-                "avg_win": 73.25675675675676,
+                "annualized_yield": 2.61211174849983,
+                "avg_loss": -82.13333333333334,
+                "avg_win": 73.30666666666667,
                 "basis": "net",
                 "bootstrap": {
                   "blocks": [
@@ -2752,23 +2759,23 @@
                     "2026-W47"
                   ],
                   "expectancy_ci": {
-                    "hi": 46.287453967191155,
-                    "lo": 14.953111111111111,
-                    "mean": 30.123742743246257,
+                    "hi": 45.61121794871795,
+                    "lo": 14.175902777777777,
+                    "mean": 29.238303730655595,
                     "n_rep": 10000
                   },
                   "loss_over_win_ci": {
-                    "hi": 1.378369998264232,
-                    "lo": 0.8592659156068385,
-                    "mean": 1.10870242325478,
+                    "hi": 1.393707924508734,
+                    "lo": 0.8640235188754176,
+                    "mean": 1.1212322547888542,
                     "n_rep": 10000
                   },
                   "n_blocks": 19,
                   "thin": false,
                   "win_rate_ci": {
-                    "hi": 0.8181818181818182,
-                    "lo": 0.6228070175438597,
-                    "mean": 0.719980045204422,
+                    "hi": 0.813953488372093,
+                    "lo": 0.6210435571687841,
+                    "mean": 0.7159024624329989,
                     "n_rep": 10000
                   }
                 },
@@ -2776,7 +2783,7 @@
                 "collateral_modelled": false,
                 "concentration": {
                   "badge": false,
-                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.6% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
+                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.7% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
@@ -2790,30 +2797,30 @@
                     "QQQ",
                     "LLY"
                   ],
-                  "top1": -0.054036458333333336,
-                  "top3": -0.056315104166666664
+                  "top1": -0.05471324983520105,
+                  "top3": -0.05702043506921556
                 },
                 "ex_top_contributors": {
-                  "expectancy": 32.45,
+                  "expectancy": 31.441176470588236,
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
                     "spread_trades:111"
                   ],
-                  "n_remaining": 100,
+                  "n_remaining": 102,
                   "state": "OK",
                   "tickers": [
                     "GLD",
                     "QQQ",
                     "LLY"
                   ],
-                  "value": 3245.0
+                  "value": 3207.0
                 },
-                "expectancy": 29.825242718446603,
+                "expectancy": 28.895238095238096,
                 "expectancy_ci": {
-                  "hi": 46.287453967191155,
-                  "lo": 14.953111111111111,
-                  "mean": 30.123742743246257,
+                  "hi": 45.61121794871795,
+                  "lo": 14.175902777777777,
+                  "mean": 29.238303730655595,
                   "n_rep": 10000
                 },
                 "expectancy_verdict": {
@@ -2923,16 +2930,18 @@
                   "spread_trades:173",
                   "spread_trades:174",
                   "spread_trades:175",
+                  "spread_trades:176",
                   "spread_trades:178",
                   "spread_trades:179",
-                  "spread_trades:180"
+                  "spread_trades:180",
+                  "spread_trades:184"
                 ],
                 "lane": "PAPER",
-                "loss_over_win": 1.105700055340343,
+                "loss_over_win": 1.12040742088032,
                 "loss_over_win_ci": {
-                  "hi": 1.378369998264232,
-                  "lo": 0.8592659156068385,
-                  "mean": 1.10870242325478,
+                  "hi": 1.393707924508734,
+                  "lo": 0.8640235188754176,
+                  "mean": 1.1212322547888542,
                   "n_rep": 10000
                 },
                 "loss_side_bar": 1.5,
@@ -2944,21 +2953,21 @@
                 },
                 "max_drawdown": -366.0,
                 "max_drawdown_badge": "LOWER BOUND \u2014 realized closes only",
-                "n": 103,
+                "n": 105,
                 "n_blocks": 19,
-                "n_losses": 29,
+                "n_losses": 30,
                 "n_scratch": 0,
-                "n_wins": 74,
+                "n_wins": 75,
                 "share_leg_total": 0.0,
                 "state": "OK",
                 "thin": false,
                 "thin_badge": null,
-                "total": 3072.0,
-                "win_rate": 0.7184466019417476,
+                "total": 3034.0,
+                "win_rate": 0.7142857142857143,
                 "win_rate_ci": {
-                  "hi": 0.8181818181818182,
-                  "lo": 0.6228070175438597,
-                  "mean": 0.719980045204422,
+                  "hi": 0.813953488372093,
+                  "lo": 0.6210435571687841,
+                  "mean": 0.7159024624329989,
                   "n_rep": 10000
                 },
                 "yield_badges": [
@@ -2967,7 +2976,7 @@
               }
             },
             "capture_label": "option leg only, by construction",
-            "capture_rate": 0.23590846260175088,
+            "capture_rate": 0.22841225626740946,
             "era": "cohort",
             "identical_badge": "identical by construction",
             "identical_by_construction": true,
@@ -3748,18 +3757,18 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-20T14:36:11.631256+00:00",
+        "as_of": "2026-11-20T14:51:15.131783+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
         "closed_rows": {
-          "paper_trades": 300,
-          "spread_trades": 166
+          "paper_trades": 301,
+          "spread_trades": 168
         },
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-20T14:30:04.012784+00:00",
+        "db_mtime": "2026-11-20T14:48:37.996811+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 72102,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3771,19 +3780,19 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-09-17T16:00:11",
-          "last_ok": "2026-11-19T16:01:24",
+          "last_ok": "2026-11-20T09:46:13",
           "streak": 0
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-19T16:03:46",
+          "last_ok": "2026-11-20T09:48:36",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-20T14:36:09.770922+00:00",
-  "generated_at_et": "2026-11-20 09:36 EST",
+  "generated_at": "2026-11-20T14:51:13.827428+00:00",
+  "generated_at_et": "2026-11-20 09:51 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3974,11 +3983,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 6.1,
+  "positions_handoff_age_min": 21.2,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-20T14:35:49.226493+00:00",
-    "last_pull_ok": "2026-11-20T14:35:49.226493+00:00",
+    "last_poll": "2026-11-20T14:49:51.527801+00:00",
+    "last_pull_ok": "2026-11-20T14:49:51.527801+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
