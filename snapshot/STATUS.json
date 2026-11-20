@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 231.7,
+    "age_min": 246.7,
     "file": "2026-11-20-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-20T11:51:47",
+      "as_of": "2026-11-20T12:06:50",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -562,10 +562,10 @@
       }
     },
     "health": {
-      "account_value": 210762.94,
+      "account_value": 210061.79,
       "capital_deployed": 0,
       "cash_available": 641.9,
-      "cash_reserve_pct": 0.3045601850116534,
+      "cash_reserve_pct": 0.30557675434451925,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3764,7 +3764,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-20T16:51:47.291639+00:00",
+        "as_of": "2026-11-20T17:06:50.916998+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3775,7 +3775,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-20T16:30:06.854016+00:00",
+        "db_mtime": "2026-11-20T17:00:06.459776+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 72102,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3798,8 +3798,8 @@
       }
     }
   },
-  "generated_at": "2026-11-20T16:51:46.163020+00:00",
-  "generated_at_et": "2026-11-20 11:51 EST",
+  "generated_at": "2026-11-20T17:06:49.331557+00:00",
+  "generated_at_et": "2026-11-20 12:06 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3985,16 +3985,16 @@
     }
   },
   "positions_handoff": {
-    "last_updated": "2026-11-20T16:30:06.859424+00:00",
+    "last_updated": "2026-11-20T17:00:06.462667+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 21.7,
+  "positions_handoff_age_min": 6.7,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-20T16:50:11.718142+00:00",
-    "last_pull_ok": "2026-11-20T16:50:11.718142+00:00",
+    "last_poll": "2026-11-20T17:06:14.146513+00:00",
+    "last_pull_ok": "2026-11-20T17:06:14.146513+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
