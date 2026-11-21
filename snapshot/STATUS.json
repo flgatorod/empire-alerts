@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 954.6,
+    "age_min": 969.6,
     "file": "2026-11-20-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-20T23:54:40",
+      "as_of": "2026-11-21T00:09:44",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -3778,7 +3778,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-21T04:54:40.378956+00:00",
+        "as_of": "2026-11-21T05:09:44.217083+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3812,8 +3812,8 @@
       }
     }
   },
-  "generated_at": "2026-11-21T04:54:39.390506+00:00",
-  "generated_at_et": "2026-11-20 23:54 EST",
+  "generated_at": "2026-11-21T05:09:42.436517+00:00",
+  "generated_at_et": "2026-11-21 00:09 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3988,27 +3988,18 @@
       "running": false
     }
   ],
-  "log_flags_today": {
-    "calendar-refresh.log": {
-      "count_today": 86,
-      "last": [
-        "2026-11-20 07:01:40,523 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: XLY\"}}}",
-        "2026-11-20 07:01:41,074 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
-        "2026-11-20 07:01:41,937 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=41: ABBV, ABNB, AMZN, ANET, BMY, BRK-B, BRK.B, CCJ, COIN, DKNG, EOG, GOOGL, HD, HOOD, INTU, JD, KO, LLY, LOW, MCD, MDLZ, MRK, NET, NVDA, NXE, OKLO, OXY, PEP, PM, PSX, PYPL, QBTS, RBLX, RGTI, S"
-      ]
-    }
-  },
+  "log_flags_today": {},
   "positions_handoff": {
     "last_updated": "2026-11-20T21:00:06.591770+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 474.6,
+  "positions_handoff_age_min": 489.6,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-21T04:53:59.841162+00:00",
-    "last_pull_ok": "2026-11-21T04:53:59.841162+00:00",
+    "last_poll": "2026-11-21T05:08:01.766779+00:00",
+    "last_pull_ok": "2026-11-21T05:08:01.766779+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
