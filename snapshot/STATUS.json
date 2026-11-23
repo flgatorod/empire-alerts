@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 82.7,
+    "age_min": 97.8,
     "file": "2026-11-23-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-23T09:22:50",
+      "as_of": "2026-11-23T09:37:58",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -568,11 +568,8 @@
       }
     },
     "health": {
-      "account_value": 227525.77,
-      "capital_deployed": 0,
-      "cash_available": 641.9,
-      "cash_reserve_pct": 0.28212188887438994,
-      "daily_pnl_pct": 0.0,
+      "degraded": true,
+      "error": "VIX unavailable and no cached reading \u2014 refusing to assume a default (closes C3): Expecting value: line 3 column 9 (char 22)",
       "halt": {
         "days_halted": null,
         "gate_note": null,
@@ -581,7 +578,7 @@
         "source": null,
         "tripped_at": null
       },
-      "health_status": "YELLOW \u2014 Monitor closely",
+      "health_status": "DEGRADED \u2014 HEALTH CHECK FAILED: VIX unavailable and no cached reading \u2014 refusing to assume a default (closes C3): Expecting value: line 3 column 9 (char 22)",
       "live_lane": {
         "account": "schwab_wheel",
         "basis": "none",
@@ -592,17 +589,7 @@
         "reason": "schwab_wheel NOT CONFIGURED: STAGE2A_ACCOUNT_HASH is unset",
         "state": "NOT_CONFIGURED",
         "state_source": "live_schwab_wheel"
-      },
-      "open_ccs": 0,
-      "open_csps": 0,
-      "pct_deployed": 0.0,
-      "sector_exposure": {},
-      "term_structure": "contango",
-      "total_positions": 0,
-      "unique_underlyings": 0,
-      "vix": 27.0,
-      "vix_regime": "high",
-      "weekly_pnl_pct": 0.0
+      }
     },
     "kpi": {
       "bases": [
@@ -3778,7 +3765,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-23T14:22:50.425503+00:00",
+        "as_of": "2026-11-23T14:37:58.478187+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3812,8 +3799,8 @@
       }
     }
   },
-  "generated_at": "2026-11-23T14:22:41.140941+00:00",
-  "generated_at_et": "2026-11-23 09:22 EST",
+  "generated_at": "2026-11-23T14:37:52.559185+00:00",
+  "generated_at_et": "2026-11-23 09:37 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3914,7 +3901,7 @@
     },
     {
       "label": "com.empire.positions-sync",
-      "last_exit": 0,
+      "last_exit": 1,
       "running": false
     },
     {
@@ -3939,7 +3926,7 @@
     },
     {
       "label": "com.empire.regime-transition-watcher",
-      "last_exit": 0,
+      "last_exit": 1,
       "running": false
     },
     {
@@ -3998,9 +3985,24 @@
       ]
     },
     "dashboard.log": {
+      "count_today": 6,
+      "last": [
+        "2026-11-23 09:30:25,457 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-23 09:30:30,745 [empire.dashboard] WARNING: Snapshot stock quotes failed: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-23 09:37:58,312 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
+      ]
+    },
+    "positions_sync.log": {
       "count_today": 1,
       "last": [
-        "2026-11-23 01:05:44,216 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+        "2026-11-23 09:30:14,934 [empire.positions_sync] ERROR: fetch_live_positions failed: HTTPSConnectionPool(host='api.schwabapi.com', port=443): Read timed out. (read timeout=10)"
+      ]
+    },
+    "regime_transition_watcher.log": {
+      "count_today": 2,
+      "last": [
+        "2026-11-23 09:30:19,690 [empire.regime_watcher] WARNING: snapshot fetch failed: timed out",
+        "2026-11-23 09:30:25,460 [empire.regime_watcher] ERROR: could not determine VIX \u2014 skipping this run"
       ]
     }
   },
@@ -4010,11 +4012,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 3922.7,
+  "positions_handoff_age_min": 3937.9,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-23T14:21:04.586411+00:00",
-    "last_pull_ok": "2026-11-23T14:21:04.586411+00:00",
+    "last_poll": "2026-11-23T14:37:07.137905+00:00",
+    "last_pull_ok": "2026-11-23T14:37:07.137905+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
