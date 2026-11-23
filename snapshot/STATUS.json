@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 384.1,
+    "age_min": 399.1,
     "file": "2026-11-23-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-23T14:24:11",
+      "as_of": "2026-11-23T14:39:15",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -580,10 +580,10 @@
       }
     },
     "health": {
-      "account_value": 224585.97,
+      "account_value": 223927.86,
       "capital_deployed": 0,
       "cash_available": 375.02,
-      "cash_reserve_pct": 0.1669828262201775,
+      "cash_reserve_pct": 0.1674735783211611,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": 0.2,
@@ -612,7 +612,7 @@
       "term_structure": "backwardation",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 26.8,
+      "vix": 27.1,
       "vix_regime": "high",
       "weekly_pnl_pct": 0.0
     },
@@ -2522,9 +2522,9 @@
           "spread": {
             "bases": {
               "book": {
-                "annualized_yield": 2.5827876761695925,
+                "annualized_yield": 2.622956955416188,
                 "avg_loss": -82.64516129032258,
-                "avg_win": 73.36842105263158,
+                "avg_win": 73.16883116883118,
                 "basis": "book",
                 "bootstrap": {
                   "blocks": [
@@ -2546,26 +2546,27 @@
                     "2026-W44",
                     "2026-W45",
                     "2026-W46",
-                    "2026-W47"
+                    "2026-W47",
+                    "2026-W48"
                   ],
                   "expectancy_ci": {
-                    "hi": 45.44569508009153,
-                    "lo": 13.405130822746521,
-                    "mean": 28.5727267872463,
+                    "hi": 45.308593571265156,
+                    "lo": 13.81894592476489,
+                    "mean": 28.812961416670138,
                     "n_rep": 10000
                   },
                   "loss_over_win_ci": {
-                    "hi": 1.3883359960751893,
-                    "lo": 0.8665818058180149,
-                    "mean": 1.124843855010126,
+                    "hi": 1.3892450055062484,
+                    "lo": 0.8665114331262908,
+                    "mean": 1.1299192807651226,
                     "n_rep": 10000
                   },
-                  "n_blocks": 19,
+                  "n_blocks": 20,
                   "thin": false,
                   "win_rate_ci": {
-                    "hi": 0.8111111111111111,
-                    "lo": 0.6194673755118214,
-                    "mean": 0.7121039997011721,
+                    "hi": 0.8155403679100663,
+                    "lo": 0.6216216216216216,
+                    "mean": 0.7148547015088117,
                     "n_rep": 10000
                   }
                 },
@@ -2573,7 +2574,7 @@
                 "collateral_modelled": false,
                 "concentration": {
                   "badge": false,
-                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.7% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
+                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.6% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
@@ -2587,30 +2588,30 @@
                     "QQQ",
                     "LLY"
                   ],
-                  "top1": -0.055076310550763105,
-                  "top3": -0.057398805573988056
+                  "top1": -0.054036458333333336,
+                  "top3": -0.056315104166666664
                 },
                 "ex_top_contributors": {
-                  "expectancy": 30.64423076923077,
+                  "expectancy": 30.904761904761905,
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
                     "spread_trades:111"
                   ],
-                  "n_remaining": 104,
+                  "n_remaining": 105,
                   "state": "OK",
                   "tickers": [
                     "GLD",
                     "QQQ",
                     "LLY"
                   ],
-                  "value": 3187.0
+                  "value": 3245.0
                 },
-                "expectancy": 28.16822429906542,
+                "expectancy": 28.444444444444443,
                 "expectancy_ci": {
-                  "hi": 45.44569508009153,
-                  "lo": 13.405130822746521,
-                  "mean": 28.5727267872463,
+                  "hi": 45.308593571265156,
+                  "lo": 13.81894592476489,
+                  "mean": 28.812961416670138,
                   "n_rep": 10000
                 },
                 "expectancy_verdict": {
@@ -2726,14 +2727,15 @@
                   "spread_trades:180",
                   "spread_trades:181",
                   "spread_trades:184",
+                  "spread_trades:186",
                   "spread_trades:187"
                 ],
                 "lane": "PAPER",
-                "loss_over_win": 1.1264405053917712,
+                "loss_over_win": 1.1295132089731696,
                 "loss_over_win_ci": {
-                  "hi": 1.3883359960751893,
-                  "lo": 0.8665818058180149,
-                  "mean": 1.124843855010126,
+                  "hi": 1.3892450055062484,
+                  "lo": 0.8665114331262908,
+                  "mean": 1.1299192807651226,
                   "n_rep": 10000
                 },
                 "loss_side_bar": 1.5,
@@ -2745,21 +2747,21 @@
                 },
                 "max_drawdown": -391.0,
                 "max_drawdown_badge": "LOWER BOUND \u2014 realized closes only",
-                "n": 107,
-                "n_blocks": 19,
+                "n": 108,
+                "n_blocks": 20,
                 "n_losses": 31,
                 "n_scratch": 0,
-                "n_wins": 76,
+                "n_wins": 77,
                 "share_leg_total": 0.0,
                 "state": "OK",
                 "thin": false,
                 "thin_badge": null,
-                "total": 3014.0,
-                "win_rate": 0.7102803738317757,
+                "total": 3072.0,
+                "win_rate": 0.7129629629629629,
                 "win_rate_ci": {
-                  "hi": 0.8111111111111111,
-                  "lo": 0.6194673755118214,
-                  "mean": 0.7121039997011721,
+                  "hi": 0.8155403679100663,
+                  "lo": 0.6216216216216216,
+                  "mean": 0.7148547015088117,
                   "n_rep": 10000
                 },
                 "yield_badges": [
@@ -2767,9 +2769,9 @@
                 ]
               },
               "net": {
-                "annualized_yield": 2.5827876761695925,
+                "annualized_yield": 2.622956955416188,
                 "avg_loss": -82.64516129032258,
-                "avg_win": 73.36842105263158,
+                "avg_win": 73.16883116883118,
                 "basis": "net",
                 "bootstrap": {
                   "blocks": [
@@ -2791,26 +2793,27 @@
                     "2026-W44",
                     "2026-W45",
                     "2026-W46",
-                    "2026-W47"
+                    "2026-W47",
+                    "2026-W48"
                   ],
                   "expectancy_ci": {
-                    "hi": 45.44569508009153,
-                    "lo": 13.405130822746521,
-                    "mean": 28.5727267872463,
+                    "hi": 45.308593571265156,
+                    "lo": 13.81894592476489,
+                    "mean": 28.812961416670138,
                     "n_rep": 10000
                   },
                   "loss_over_win_ci": {
-                    "hi": 1.3883359960751893,
-                    "lo": 0.8665818058180149,
-                    "mean": 1.124843855010126,
+                    "hi": 1.3892450055062484,
+                    "lo": 0.8665114331262908,
+                    "mean": 1.1299192807651226,
                     "n_rep": 10000
                   },
-                  "n_blocks": 19,
+                  "n_blocks": 20,
                   "thin": false,
                   "win_rate_ci": {
-                    "hi": 0.8111111111111111,
-                    "lo": 0.6194673755118214,
-                    "mean": 0.7121039997011721,
+                    "hi": 0.8155403679100663,
+                    "lo": 0.6216216216216216,
+                    "mean": 0.7148547015088117,
                     "n_rep": 10000
                   }
                 },
@@ -2818,7 +2821,7 @@
                 "collateral_modelled": false,
                 "concentration": {
                   "badge": false,
-                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.7% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
+                  "badge_text": "CONCENTRATED \u2014 top 3 = -5.6% (#spread_trades:178, #spread_trades:132, #spread_trades:111)",
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
@@ -2832,30 +2835,30 @@
                     "QQQ",
                     "LLY"
                   ],
-                  "top1": -0.055076310550763105,
-                  "top3": -0.057398805573988056
+                  "top1": -0.054036458333333336,
+                  "top3": -0.056315104166666664
                 },
                 "ex_top_contributors": {
-                  "expectancy": 30.64423076923077,
+                  "expectancy": 30.904761904761905,
                   "ids": [
                     "spread_trades:178",
                     "spread_trades:132",
                     "spread_trades:111"
                   ],
-                  "n_remaining": 104,
+                  "n_remaining": 105,
                   "state": "OK",
                   "tickers": [
                     "GLD",
                     "QQQ",
                     "LLY"
                   ],
-                  "value": 3187.0
+                  "value": 3245.0
                 },
-                "expectancy": 28.16822429906542,
+                "expectancy": 28.444444444444443,
                 "expectancy_ci": {
-                  "hi": 45.44569508009153,
-                  "lo": 13.405130822746521,
-                  "mean": 28.5727267872463,
+                  "hi": 45.308593571265156,
+                  "lo": 13.81894592476489,
+                  "mean": 28.812961416670138,
                   "n_rep": 10000
                 },
                 "expectancy_verdict": {
@@ -2971,14 +2974,15 @@
                   "spread_trades:180",
                   "spread_trades:181",
                   "spread_trades:184",
+                  "spread_trades:186",
                   "spread_trades:187"
                 ],
                 "lane": "PAPER",
-                "loss_over_win": 1.1264405053917712,
+                "loss_over_win": 1.1295132089731696,
                 "loss_over_win_ci": {
-                  "hi": 1.3883359960751893,
-                  "lo": 0.8665818058180149,
-                  "mean": 1.124843855010126,
+                  "hi": 1.3892450055062484,
+                  "lo": 0.8665114331262908,
+                  "mean": 1.1299192807651226,
                   "n_rep": 10000
                 },
                 "loss_side_bar": 1.5,
@@ -2990,21 +2994,21 @@
                 },
                 "max_drawdown": -391.0,
                 "max_drawdown_badge": "LOWER BOUND \u2014 realized closes only",
-                "n": 107,
-                "n_blocks": 19,
+                "n": 108,
+                "n_blocks": 20,
                 "n_losses": 31,
                 "n_scratch": 0,
-                "n_wins": 76,
+                "n_wins": 77,
                 "share_leg_total": 0.0,
                 "state": "OK",
                 "thin": false,
                 "thin_badge": null,
-                "total": 3014.0,
-                "win_rate": 0.7102803738317757,
+                "total": 3072.0,
+                "win_rate": 0.7129629629629629,
                 "win_rate_ci": {
-                  "hi": 0.8111111111111111,
-                  "lo": 0.6194673755118214,
-                  "mean": 0.7121039997011721,
+                  "hi": 0.8155403679100663,
+                  "lo": 0.6216216216216216,
+                  "mean": 0.7148547015088117,
                   "n_rep": 10000
                 },
                 "yield_badges": [
@@ -3013,7 +3017,7 @@
               }
             },
             "capture_label": "option leg only, by construction",
-            "capture_rate": 0.2228301049829957,
+            "capture_rate": 0.2252364542855048,
             "era": "cohort",
             "identical_badge": "identical by construction",
             "identical_by_construction": true,
@@ -3794,18 +3798,18 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-23T19:24:12.022695+00:00",
+        "as_of": "2026-11-23T19:39:15.108395+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
         "closed_rows": {
           "paper_trades": 306,
-          "spread_trades": 170
+          "spread_trades": 171
         },
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-23T19:00:03.987880+00:00",
+        "db_mtime": "2026-11-23T19:34:11.963847+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 72102,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3817,19 +3821,19 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-11-23T09:45:29",
-          "last_ok": "2026-11-23T13:31:26",
+          "last_ok": "2026-11-23T14:31:36",
           "streak": 0
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-23T13:33:52",
+          "last_ok": "2026-11-23T14:34:11",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-23T19:24:10.004570+00:00",
-  "generated_at_et": "2026-11-23 14:24 EST",
+  "generated_at": "2026-11-23T19:39:13.895532+00:00",
+  "generated_at_et": "2026-11-23 14:39 EST",
   "kill_switch_flag_present": true,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -4014,11 +4018,11 @@
       ]
     },
     "csp_execution.log": {
-      "count_today": 3,
+      "count_today": 4,
       "last": [
-        "2026-11-23 11:04:01,333 [empire.csp_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 ",
         "2026-11-23 12:33:53,828 [empire.csp_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 ",
-        "2026-11-23 13:33:52,490 [empire.csp_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 "
+        "2026-11-23 13:33:52,490 [empire.csp_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 ",
+        "2026-11-23 14:34:11,961 [empire.csp_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 "
       ]
     },
     "dashboard.log": {
@@ -4030,11 +4034,11 @@
       ]
     },
     "paper_execution.log": {
-      "count_today": 7,
+      "count_today": 8,
       "last": [
-        "2026-11-23 11:01:30,647 [empire.paper_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column ",
         "2026-11-23 12:31:16,187 [empire.paper_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column ",
-        "2026-11-23 13:31:26,877 [empire.paper_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column "
+        "2026-11-23 13:31:26,877 [empire.paper_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column ",
+        "2026-11-23 14:31:36,676 [empire.paper_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column "
       ]
     },
     "positions_sync.log": {
@@ -4051,25 +4055,25 @@
       ]
     },
     "spread_execution.log": {
-      "count_today": 4,
+      "count_today": 5,
       "last": [
-        "2026-11-23 11:02:02,570 [empire.spread_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column",
         "2026-11-23 12:31:51,895 [empire.spread_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column",
-        "2026-11-23 13:31:59,701 [empire.spread_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column"
+        "2026-11-23 13:31:59,701 [empire.spread_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column",
+        "2026-11-23 14:32:09,745 [empire.spread_exec] WARNING: KILL SWITCH ENGAGED \u2014 skipping all opens: schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column"
       ]
     }
   },
   "positions_handoff": {
-    "last_updated": "2026-11-23T19:00:03.992155+00:00",
+    "last_updated": "2026-11-23T19:30:07.037633+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 24.1,
+  "positions_handoff_age_min": 9.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-23T19:24:03.489929+00:00",
-    "last_pull_ok": "2026-11-23T19:24:03.489929+00:00",
+    "last_poll": "2026-11-23T19:38:05.873497+00:00",
+    "last_pull_ok": "2026-11-23T19:38:05.873497+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
