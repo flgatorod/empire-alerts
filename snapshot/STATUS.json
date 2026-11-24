@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 790.6,
+    "age_min": 805.6,
     "file": "2026-11-23-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-23T21:10:45",
+      "as_of": "2026-11-23T21:25:47",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -3792,7 +3792,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-24T02:10:45.303032+00:00",
+        "as_of": "2026-11-24T02:25:47.706325+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3826,8 +3826,8 @@
       }
     }
   },
-  "generated_at": "2026-11-24T02:10:44.432204+00:00",
-  "generated_at_et": "2026-11-23 21:10 EST",
+  "generated_at": "2026-11-24T02:25:47.258059+00:00",
+  "generated_at_et": "2026-11-23 21:25 EST",
   "kill_switch_flag_present": true,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -4020,11 +4020,11 @@
       ]
     },
     "dashboard.log": {
-      "count_today": 16,
+      "count_today": 20,
       "last": [
-        "2026-11-23 21:10:44,938 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: Schwab returned dict, expected a list of accounts (['errors'])",
-        "2026-11-23 21:10:44,943 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
-        "2026-11-23 21:10:45,179 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-23 21:25:47,457 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: Schwab returned dict, expected a list of accounts (['errors'])",
+        "2026-11-23 21:25:47,461 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
+        "2026-11-23 21:25:47,582 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
       ]
     },
     "paper_execution.log": {
@@ -4063,11 +4063,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 310.6,
+  "positions_handoff_age_min": 325.7,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-24T02:09:10.240746+00:00",
-    "last_pull_ok": "2026-11-24T02:09:10.240746+00:00",
+    "last_poll": "2026-11-24T02:25:12.776537+00:00",
+    "last_pull_ok": "2026-11-24T02:25:12.776537+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
