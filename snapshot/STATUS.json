@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 103.1,
+    "age_min": 118.1,
     "file": "2026-11-24-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-24T09:43:12",
+      "as_of": "2026-11-24T09:58:15",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -568,10 +568,10 @@
       }
     },
     "health": {
-      "account_value": 216708.72,
+      "account_value": 217850.29,
       "capital_deployed": 0,
       "cash_available": 375.02,
-      "cash_reserve_pct": 0.17305256567433003,
+      "cash_reserve_pct": 0.17214574284018624,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -600,7 +600,7 @@
       "term_structure": "backwardation",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 28.4,
+      "vix": 27.2,
       "vix_regime": "high",
       "weekly_pnl_pct": 0.0
     },
@@ -3788,7 +3788,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-24T14:43:12.388713+00:00",
+        "as_of": "2026-11-24T14:58:15.781360+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3799,7 +3799,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-24T14:30:05.526205+00:00",
+        "db_mtime": "2026-11-24T14:49:10.174556+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 68206,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3811,19 +3811,19 @@
       "scans": {
         "cc_scan": {
           "last_fail": "2026-11-23T09:45:29",
-          "last_ok": "2026-11-23T16:01:16",
+          "last_ok": "2026-11-24T09:46:30",
           "streak": 0
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-23T16:03:47",
+          "last_ok": "2026-11-24T09:49:09",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-24T14:43:11.105887+00:00",
-  "generated_at_et": "2026-11-24 09:43 EST",
+  "generated_at": "2026-11-24T14:58:14.706521+00:00",
+  "generated_at_et": "2026-11-24 09:58 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -4006,6 +4006,14 @@
         "2026-11-24 07:01:28,110 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
         "2026-11-24 07:01:28,968 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=13: BRK-B, BRK.B, CRWD, INTU, JD, LOW, NVDA, OKLO, QBTS, RGTI, SQ, TGT, TJX \u2014 entries on these names will be stamped earnings_data_missing=1"
       ]
+    },
+    "dashboard.log": {
+      "count_today": 3,
+      "last": [
+        "2026-11-24 09:45:05,986 [empire.spread_scanners] WARNING: IC scan SPY chain failed: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-24 09:45:14,975 [wheel.signal_engine] ERROR: Option chain lookup failed for XOM: Expecting value: line 3 column 9 (char 22)",
+        "2026-11-24 09:46:08,771 [wheel.signal_engine] WARNING: IV/HV spread calc failed for JPM: Expecting value: line 3 column 9 (char 22)"
+      ]
     }
   },
   "positions_handoff": {
@@ -4014,11 +4022,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 13.1,
+  "positions_handoff_age_min": 28.2,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-24T14:41:14.804292+00:00",
-    "last_pull_ok": "2026-11-24T14:41:14.804292+00:00",
+    "last_poll": "2026-11-24T14:57:17.491198+00:00",
+    "last_pull_ok": "2026-11-24T14:57:17.491198+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
