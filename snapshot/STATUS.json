@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 12.7,
+    "age_min": 27.8,
     "file": "2026-11-24-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-24T08:12:53",
+      "as_of": "2026-11-24T08:27:56",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -568,10 +568,10 @@
       }
     },
     "health": {
-      "account_value": 218154.84,
+      "account_value": 218408.09,
       "capital_deployed": 0,
       "cash_available": 375.02,
-      "cash_reserve_pct": 0.17190542277219245,
+      "cash_reserve_pct": 0.17170609385394103,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -600,7 +600,7 @@
       "term_structure": "backwardation",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 32.4,
+      "vix": 29.4,
       "vix_regime": "high",
       "weekly_pnl_pct": 0.0
     },
@@ -3788,7 +3788,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-24T13:12:53.591194+00:00",
+        "as_of": "2026-11-24T13:27:56.552785+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3822,8 +3822,8 @@
       }
     }
   },
-  "generated_at": "2026-11-24T13:12:52.729840+00:00",
-  "generated_at_et": "2026-11-24 08:12 EST",
+  "generated_at": "2026-11-24T13:27:55.522992+00:00",
+  "generated_at_et": "2026-11-24 08:27 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -4014,11 +4014,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 972.8,
+  "positions_handoff_age_min": 987.8,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-24T13:10:59.474906+00:00",
-    "last_pull_ok": "2026-11-24T13:10:59.474906+00:00",
+    "last_poll": "2026-11-24T13:27:02.249558+00:00",
+    "last_pull_ok": "2026-11-24T13:27:02.249558+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
