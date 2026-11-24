@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 745.5,
+    "age_min": 760.5,
     "file": "2026-11-23-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-23T20:25:37",
+      "as_of": "2026-11-23T20:40:39",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -256,7 +256,7 @@
           "status": "PASS"
         },
         {
-          "gap": "kill switch halted 0.4d \u2014 no new evidence accumulating",
+          "gap": "kill switch halted 0.5d \u2014 no new evidence accumulating",
           "key": "H",
           "met": false,
           "n": 152,
@@ -296,10 +296,10 @@
         "win": "net-positive (holistic). CC net = option leg + (close_underlying - entry_underlying)*100*contracts (drift approximation; assignment not modeled). 'wins_book_option_leg' is the option-leg-only view, reported but NOT the qualifying-win metric (owner ruling 2026-07-06)."
       },
       "gaps_to_go_live": [
-        "kill switch halted 0.4d \u2014 no new evidence accumulating"
+        "kill switch halted 0.5d \u2014 no new evidence accumulating"
       ],
       "halt": {
-        "days_halted": 0.4,
+        "days_halted": 0.5,
         "gate_note": "ALL paper opens are skipped while halted \u2014 NEW ENTRIES are frozen; closes and qualification continue, so the counter can still advance",
         "halted": true,
         "reason": "schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 (char 22)); QBTS: no mark; RGTI: mark lookup failed (Expecting value: line 3 column 9 (char 22)); RGTI: no mark) \u2014 refusing to judge a two-term limit on one term",
@@ -586,7 +586,7 @@
       "degraded": true,
       "error": "live account unreadable \u2014 see logs/dashboard.log",
       "halt": {
-        "days_halted": 0.4,
+        "days_halted": 0.5,
         "gate_note": "ALL paper opens are skipped while halted \u2014 NEW ENTRIES are frozen; closes and qualification continue, so the counter can still advance",
         "halted": true,
         "reason": "schwab_main daily-loss check cannot value 300 claimed share(s) (CCJ: mark lookup failed (Expecting value: line 3 column 9 (char 22)); CCJ: no mark; QBTS: mark lookup failed (Expecting value: line 3 column 9 (char 22)); QBTS: no mark; RGTI: mark lookup failed (Expecting value: line 3 column 9 (char 22)); RGTI: no mark) \u2014 refusing to judge a two-term limit on one term",
@@ -3792,7 +3792,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-24T01:25:37.147022+00:00",
+        "as_of": "2026-11-24T01:40:39.921596+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3826,8 +3826,8 @@
       }
     }
   },
-  "generated_at": "2026-11-24T01:25:36.394357+00:00",
-  "generated_at_et": "2026-11-23 20:25 EST",
+  "generated_at": "2026-11-24T01:40:39.238945+00:00",
+  "generated_at_et": "2026-11-23 20:40 EST",
   "kill_switch_flag_present": true,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -4020,11 +4020,11 @@
       ]
     },
     "dashboard.log": {
-      "count_today": 3,
+      "count_today": 7,
       "last": [
-        "[Schwabdev] After authorizing, paste the address bar url here: 2026-11-23 20:25:36,790 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: EOFError: EOF when reading a line",
-        "2026-11-23 20:25:36,799 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
-        "2026-11-23 20:25:37,029 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
+        "2026-11-23 20:40:39,570 [wheel.scanner] ERROR: LIVE ACCOUNT NOT AVAILABLE: Schwab returned dict, expected a list of accounts (['errors'])",
+        "2026-11-23 20:40:39,573 [Schwabdev] CRITICAL: Refresh token and Access token are invalid, couldn't get db lock (cannot start a transaction within a transaction).",
+        "2026-11-23 20:40:39,797 [wheel.signal_engine] ERROR: Failed to fetch VIX: Expecting value: line 3 column 9 (char 22)"
       ]
     },
     "paper_execution.log": {
@@ -4063,11 +4063,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 265.5,
+  "positions_handoff_age_min": 280.6,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-24T01:25:03.401005+00:00",
-    "last_pull_ok": "2026-11-24T01:25:03.401005+00:00",
+    "last_poll": "2026-11-24T01:39:05.637597+00:00",
+    "last_pull_ok": "2026-11-24T01:39:05.637597+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
