@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 273.9,
+    "age_min": 289.0,
     "file": "2026-11-25-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-25T12:34:01",
+      "as_of": "2026-11-25T12:49:05",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -568,10 +568,10 @@
       }
     },
     "health": {
-      "account_value": 210791.42,
+      "account_value": 211564.09,
       "capital_deployed": 0,
       "cash_available": 132.33,
-      "cash_reserve_pct": 0.06277769749831373,
+      "cash_reserve_pct": 0.06254842208807743,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -600,7 +600,7 @@
       "term_structure": "backwardation",
       "total_positions": 0,
       "unique_underlyings": 0,
-      "vix": 31.1,
+      "vix": 29.8,
       "vix_regime": "high",
       "weekly_pnl_pct": 0.0
     },
@@ -3814,7 +3814,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-25T17:34:01.735443+00:00",
+        "as_of": "2026-11-25T17:49:05.121002+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3825,7 +3825,7 @@
         "cohort_start": "2026-07-07",
         "db": "trades.db",
         "db_bytes": "[redacted]",
-        "db_mtime": "2026-11-25T17:32:25.244204+00:00",
+        "db_mtime": "2026-11-25T17:35:17.191925+00:00",
         "schema_checked_at_read": true,
         "serving_pid": 68206,
         "stale_process_risk": "NONE \u2014 schema is re-read per request, not cached"
@@ -3842,14 +3842,14 @@
         },
         "csp_scan": {
           "last_fail": "2026-09-07T16:14:24",
-          "last_ok": "2026-11-25T11:04:12",
+          "last_ok": "2026-11-25T12:34:20",
           "streak": 0
         }
       }
     }
   },
-  "generated_at": "2026-11-25T17:33:59.724923+00:00",
-  "generated_at_et": "2026-11-25 12:33 EST",
+  "generated_at": "2026-11-25T17:49:04.007695+00:00",
+  "generated_at_et": "2026-11-25 12:49 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -3881,7 +3881,7 @@
     {
       "label": "com.empire.csp-execution",
       "last_exit": 0,
-      "running": true
+      "running": false
     },
     {
       "label": "com.empire.daily-briefing",
@@ -4047,19 +4047,19 @@
       ]
     },
     "shadow-sweep.log": {
-      "count_today": 4,
+      "count_today": 6,
       "last": [
-        "2026-11-25 09:50:19,129 [empire.shadow_sweep] INFO: admitted 41 (31 PARTIAL); swept 41 lifetime(s): {'PRICED': 40, 'NO_QUOTE': 1, 'NON_FINITE': 0}; failed=[] missing=[]",
-        "2026-11-25 11:05:15,987 [position_marks] INFO: shadow sweep 2026-11-25T11:05:01: 41 lifetime(s), 40 priced, 1 no-quote, 0 failed, 0 with no trade, 0 newly admitted",
-        "2026-11-25 11:05:15,988 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 41 lifetime(s): {'PRICED': 40, 'NO_QUOTE': 1, 'NON_FINITE': 0}; failed=[] missing=[]"
+        "2026-11-25 11:05:15,988 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 41 lifetime(s): {'PRICED': 40, 'NO_QUOTE': 1, 'NON_FINITE': 0}; failed=[] missing=[]",
+        "2026-11-25 12:35:17,192 [position_marks] INFO: shadow sweep 2026-11-25T12:35:03: 42 lifetime(s), 42 priced, 0 no-quote, 0 failed, 0 with no trade, 1 newly admitted",
+        "2026-11-25 12:35:17,193 [empire.shadow_sweep] INFO: admitted 1 (0 PARTIAL); swept 42 lifetime(s): {'PRICED': 42, 'NO_QUOTE': 0, 'NON_FINITE': 0}; failed=[] missing=[]"
       ]
     },
     "shadow_sweep.log": {
-      "count_today": 5,
+      "count_today": 7,
       "last": [
-        "2026-11-25 09:50:19,129 [empire.shadow_sweep] INFO: admitted 41 (31 PARTIAL); swept 41 lifetime(s): {'PRICED': 40, 'NO_QUOTE': 1, 'NON_FINITE': 0}; failed=[] missing=[]",
-        "2026-11-25 11:05:15,987 [position_marks] INFO: shadow sweep 2026-11-25T11:05:01: 41 lifetime(s), 40 priced, 1 no-quote, 0 failed, 0 with no trade, 0 newly admitted",
-        "2026-11-25 11:05:15,988 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 41 lifetime(s): {'PRICED': 40, 'NO_QUOTE': 1, 'NON_FINITE': 0}; failed=[] missing=[]"
+        "2026-11-25 11:05:15,988 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 41 lifetime(s): {'PRICED': 40, 'NO_QUOTE': 1, 'NON_FINITE': 0}; failed=[] missing=[]",
+        "2026-11-25 12:35:17,192 [position_marks] INFO: shadow sweep 2026-11-25T12:35:03: 42 lifetime(s), 42 priced, 0 no-quote, 0 failed, 0 with no trade, 1 newly admitted",
+        "2026-11-25 12:35:17,193 [empire.shadow_sweep] INFO: admitted 1 (0 PARTIAL); swept 42 lifetime(s): {'PRICED': 42, 'NO_QUOTE': 0, 'NON_FINITE': 0}; failed=[] missing=[]"
       ]
     }
   },
@@ -4069,11 +4069,11 @@
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 4.0,
+  "positions_handoff_age_min": 19.1,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-25T17:33:52.910278+00:00",
-    "last_pull_ok": "2026-11-25T17:33:52.910278+00:00",
+    "last_poll": "2026-11-25T17:47:55.563410+00:00",
+    "last_pull_ok": "2026-11-25T17:47:55.563410+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
