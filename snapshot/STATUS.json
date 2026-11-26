@@ -1,11 +1,11 @@
 {
   "briefing": {
-    "age_min": 951.3,
+    "age_min": 966.4,
     "file": "2026-11-25-daily.md"
   },
   "dashboard": {
     "gate": {
-      "as_of": "2026-11-25T23:51:25",
+      "as_of": "2026-11-26T00:06:28",
       "calibration": {
         "assigned_ids": [],
         "assigned_note": "ASSIGNED rows qualify but are excluded from wins, losses, win rate, expectancy and net_pnl \u2014 the cycle is unfinished and the credit's offset is unrealized in the share lot",
@@ -568,10 +568,10 @@
       }
     },
     "health": {
-      "account_value": 218329.24,
+      "account_value": 218330.12,
       "capital_deployed": 0,
       "cash_available": 132.33,
-      "cash_reserve_pct": 0.06061029663273688,
+      "cash_reserve_pct": 0.060610052337258837,
       "daily_pnl_pct": 0.0,
       "halt": {
         "days_halted": null,
@@ -3820,7 +3820,7 @@
       },
       "objective": "expectancy per trade, loss side under 1.5x win side, capture rate - not win rate, not total P&L.",
       "provenance": {
-        "as_of": "2026-11-26T04:51:25.602813+00:00",
+        "as_of": "2026-11-26T05:06:28.440385+00:00",
         "bootstrap_b": 10000,
         "bootstrap_seed": "[redacted]",
         "ci_alpha": 0.05,
@@ -3854,8 +3854,8 @@
       }
     }
   },
-  "generated_at": "2026-11-26T04:51:23.683729+00:00",
-  "generated_at_et": "2026-11-25 23:51 EST",
+  "generated_at": "2026-11-26T05:06:27.577360+00:00",
+  "generated_at_et": "2026-11-26 00:06 EST",
   "kill_switch_flag_present": false,
   "lane_note": "Automation is PAPER. LIVE lane = Stage 2a (CSP-only, typed CONFIRMED). Label every figure PAPER or LIVE.",
   "launchd_jobs": [
@@ -4035,43 +4035,18 @@
       "running": false
     }
   ],
-  "log_flags_today": {
-    "calendar-refresh.log": {
-      "count_today": 58,
-      "last": [
-        "2026-11-25 07:01:25,712 [yfinance] ERROR: HTTP Error 404: {\"quoteSummary\":{\"result\":null,\"error\":{\"code\":\"Not Found\",\"description\":\"No fundamentals data found for symbol: XLY\"}}}",
-        "2026-11-25 07:01:26,195 [yfinance] ERROR: XLY: No earnings dates found, symbol may be delisted",
-        "2026-11-25 07:01:26,914 [empire.calendar_refresh] ERROR:   no future earnings date \u2014 EQUITY COVERAGE GAP, n=13: BRK-B, BRK.B, CRWD, INTU, JD, LOW, NVDA, OKLO, QBTS, RGTI, SQ, TGT, TJX \u2014 entries on these names will be stamped earnings_data_missing=1"
-      ]
-    },
-    "shadow-sweep.log": {
-      "count_today": 12,
-      "last": [
-        "2026-11-25 14:35:17,949 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 42 lifetime(s): {'PRICED': 42, 'NO_QUOTE': 0, 'NON_FINITE': 0}; failed=[] missing=[]",
-        "2026-11-25 16:05:17,597 [position_marks] INFO: shadow sweep 2026-11-25T16:05:04: 42 lifetime(s), 42 priced, 0 no-quote, 0 failed, 0 with no trade, 0 newly admitted",
-        "2026-11-25 16:05:17,597 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 42 lifetime(s): {'PRICED': 42, 'NO_QUOTE': 0, 'NON_FINITE': 0}; failed=[] missing=[]"
-      ]
-    },
-    "shadow_sweep.log": {
-      "count_today": 13,
-      "last": [
-        "2026-11-25 14:35:17,949 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 42 lifetime(s): {'PRICED': 42, 'NO_QUOTE': 0, 'NON_FINITE': 0}; failed=[] missing=[]",
-        "2026-11-25 16:05:17,597 [position_marks] INFO: shadow sweep 2026-11-25T16:05:04: 42 lifetime(s), 42 priced, 0 no-quote, 0 failed, 0 with no trade, 0 newly admitted",
-        "2026-11-25 16:05:17,597 [empire.shadow_sweep] INFO: admitted 0 (0 PARTIAL); swept 42 lifetime(s): {'PRICED': 42, 'NO_QUOTE': 0, 'NON_FINITE': 0}; failed=[] missing=[]"
-      ]
-    }
-  },
+  "log_flags_today": {},
   "positions_handoff": {
     "last_updated": "2026-11-25T21:00:05.046425+00:00",
     "open_count": 0,
     "open_option_positions": [],
     "source": "positions_sync reconciled against live Schwab API"
   },
-  "positions_handoff_age_min": 471.3,
+  "positions_handoff_age_min": 486.4,
   "relay_heartbeat": {
     "deferred": 0,
-    "last_poll": "2026-11-26T04:49:45.200174+00:00",
-    "last_pull_ok": "2026-11-26T04:49:45.200174+00:00",
+    "last_poll": "2026-11-26T05:05:47.623263+00:00",
+    "last_pull_ok": "2026-11-26T05:05:47.623263+00:00",
     "pending": 0,
     "pull_error": "",
     "pull_failures": 0,
